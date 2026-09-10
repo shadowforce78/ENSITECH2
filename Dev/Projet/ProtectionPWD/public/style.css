@@ -80,3 +80,59 @@ h1 {
 #passwordStrength.very-strong {
     color: #2a9d8f;
 }
+
+.rules {
+    margin-top: 1.25rem;
+    border: 2px solid #d8dbe6;
+    border-radius: 6px;
+    padding: 0.6rem 0.75rem;
+}
+
+.rules summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rule-group {
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #d8dbe6;
+}
+
+.rule-group p {
+    margin: 0 0 0.3rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.rules label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.rules input[type="number"] {
+    width: 4rem;
+    padding: 0.25rem 0.4rem;
+    border: 2px solid #d8dbe6;
+    border-radius: 6px;
+}
+
+.rules button {
+    margin-top: 0.75rem;
+    width: 100%;
+    padding: 0.4rem;
+    border: 2px solid #4361ee;
+    border-radius: 6px;
+    background-color: #4361ee;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rules button:hover {
+    background-color: #2f4bd6;
+}

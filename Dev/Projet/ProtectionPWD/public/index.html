@@ -1,24 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Protection Check</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="card">
-      <h1>Password Protection Check</h1>
-      <input
-        type="password"
-        id="passwordInput"
-        placeholder="Enter your password"
-      />
-      <div class="reveal">
-          <img src="/img/reveal.png" alt="reveal">
-      </div>
-      <p id="passwordStrength"></p>
-    </div>
-    <script src="script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password Protection Check</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="card">
+            <h1>Password Protection Check</h1>
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter your password" />
+            <div class="reveal">
+                <img src="/img/reveal.png" alt="reveal">
+            </div>
+            <p id="passwordStrength"></p>
+
+            <details class="rules">
+                <summary>Réglages de solidité</summary>
+
+                <div class="rule-group">
+                    <p>Medium</p>
+                    <label>
+                        Longueur min
+                        <input type="number" id="medium-minLength" min="1" />
+                    </label>
+                    <label>
+                        Types de caractères min
+                        <input type="number" id="medium-minTypes" min="1"
+                            max="4" />
+                    </label>
+                </div>
+
+                <div class="rule-group">
+                    <p>Strong</p>
+                    <label>
+                        Longueur min
+                        <input type="number" id="strong-minLength" min="1" />
+                    </label>
+                    <label>
+                        Types de caractères min
+                        <input type="number" id="strong-minTypes" min="1"
+                            max="4" />
+                    </label>
+                </div>
+
+                <div class="rule-group">
+                    <p>Very strong</p>
+                    <label>
+                        Longueur min
+                        <input type="number" id="veryStrong-minLength"
+                            min="1" />
+                    </label>
+                    <label>
+                        Types de caractères min
+                        <input type="number" id="veryStrong-minTypes" min="1"
+                            max="4" />
+                    </label>
+                </div>
+
+                <button id="saveRules">Enregistrer</button>
+            </details>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
