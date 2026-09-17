@@ -66,3 +66,7 @@ Impact sur la disponibilité et l'intégrité : les sauvegardes stockées sont c
 # Cours
 
 **DPO** : Tient le registre des traitements.
+
+
+![[Drawing 2026-09-17 10.42.39.excalidraw]]
+![[Drawing 2026-09-17 11.31.35.excalidraw]]
