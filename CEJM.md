@@ -25,3 +25,25 @@
 5) Montrez comment Airbnb a boulversé le secteur du tourisme traditionnel
 		Airbnb a boulverser le secteur du tourisme car elle propose une nouvelle modalité de location avec des services supplémentaires ce qui a crée une concurrence supplementaire au hotel et loueur traditionnelen faisant baisser les prix.
 		Cependant c'est une concurrence déloyale car airbnb n'est pas soumis au meme contraintes reglementaire ni au meme regle en matiere de tva
+
+
+# Chapitre 2
+
+## Cas pratique chap 2
+
+1) Pourquoi l'entreprise AirBnB fait-elle partie de l'économie de l'usage
+	1)  En utilisant AirBnB on ne paye pas pour un droit de propriété sur un objet quelquoncques mais pour un droit d'usage (en l'occurence ici un logement)
+
+2) Montrez que le système appliqué par AirBnB permet de construire un profil des utilisateurs deux faces de la plateforme
+	1) Ça créé un profil a deux faces avec :
+		1) Les vendeurs (qui propose la location)
+		2) Les acheteurs (qui loue le logement)
+
+3) En quoi le fonctionnement  de la plateforme influence-t-il les modes de consommation des utilisateurs ?
+	1) Avec leur système de commentaire intégrés, les clients n'ont pas a aller faire des recherches plus poussé de leur coté
+
+4) Pourquoi peut-on parler d'un business model en plateforme ?
+	1) Parce que le systeme de tarification change en fonction du modèle choisis
+
+5) Face à l'évolution des reglementations concernant la location de courte  durée, comment AirBnB envisage-t-elle de continuer à créer de la valeur ?
+	1) AirBnb a lancé plusieurs services différents de la simple location courte durée, comme par exemple la construction d'immeuble

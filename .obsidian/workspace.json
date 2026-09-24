@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "68e546a40c941229",
+        "id": "3d17f42c0dccdab9",
         "type": "tabs",
         "children": [
           {
-            "id": "a3976aef664ef912",
+            "id": "d86cd071033270eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cybersécurité.md",
+                "file": "Dev.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cybersécurité"
+              "title": "Dev"
             }
           }
         ]
@@ -200,36 +200,45 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3976aef664ef912",
+  "active": "d86cd071033270eb",
   "lastOpenFiles": [
-    "img/Pasted Image 20260917113136_820.png",
+    "img/codefinal.png",
+    "Dev.md",
+    "img/code.png",
+    "img/code2.png",
+    "BDD.md",
+    "Excalidraw/symboles algebres.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-24 12.42.23.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-24 12.48.14.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-24 14.09.57.excalidraw.md",
+    "BDD/ModelisationRetro.pdf",
+    "Excalidraw/Drawing 2026-09-24 12.33.24.excalidraw.md",
     "Cybersécurité.md",
-    "Cyber/ExoCentreCall.pdf",
+    "img/Pasted image 20260924105853.png",
+    "img/Pasted image 20260924120347.png",
+    "img/Pasted image 20260924110847.png",
+    "BDD/ModèlisationExo1.pdf",
+    "img/Pasted Image 20260918172029_957.png",
+    "img/Pasted Image 20260918173907_400.png",
+    "BDD",
+    "Anglais.md",
+    "Excalidraw/Drawing 2026-09-18 17.39.12.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-18 17.20.28.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-11 17.27.51.excalidraw.md",
+    "CEJM.md",
+    "CEJM/lu184114nzzd.tmp",
+    "CEJM/lu184114nzy4.tmp",
+    "CEJM/lu184114nzxf.tmp",
+    "CEJM/lu184114nzte.tmp",
+    "CEJM/lu184114nzqz.tmp",
+    "CEJM/lu184114nzqu.tmp",
+    "CEJM/lu184114nzpl.tmp",
+    "Maths.md",
+    "img/Pasted Image 20260917113136_820.png",
     "Excalidraw/Drawing 2026-09-17 11.31.35.excalidraw.md",
     "img/Pasted Image 20260917142505_470.png",
-    "img/Pasted Image 20260917114518_355.png",
-    "img/Pasted Image 20260917114441_906.png",
-    "img/Pasted Image 20260917113831_735.png",
-    "img/Pasted Image 20260917113726_775.png",
-    "img/Pasted Image 20260917113650_263.png",
-    "img/Pasted Image 20260917113600_532.png",
-    "img/Pasted Image 20260917113308_997.png",
-    "img/Pasted Image 20260917113300_437.png",
-    "Cyber/CyberscecuIntro.pdf",
-    "Cyber/ExoCentreCall.pdf.fdmdownload",
-    "Cyber/ExerciceDonnesPersonneles.pdf",
-    "Cyber/ExerciceDonnesPersonneles.pdf.fdmdownload",
     "Excalidraw/Drawing 2026-09-17 10.42.39.excalidraw.md",
     "Progression Péda.md",
-    "Excalidraw/Drawing 2026-09-11 17.27.51.excalidraw.md",
-    "Dev.md",
-    "CEJM.md",
-    "Cyber/ExerciceDonnesPersonnellesEtudiants.pdf",
-    "Anglais.md",
-    "Excalidraw",
-    "CEJM/lu242414n3j4.tmp",
-    "Dev/Projet/ProtectionPWD/public",
-    "Dev/Projet/ProtectionPWD/index.js",
     "Dev/Projet/ProtectionPWD/node_modules/iconv-lite/README.md",
     "Dev/Projet/ProtectionPWD/node_modules/object-inspect/CHANGELOG.md",
     "Dev/Projet/ProtectionPWD/node_modules/qs/README.md",
@@ -237,15 +246,6 @@
     "Dev/Projet/ProtectionPWD/node_modules/qs/CHANGELOG.md",
     "Dev/Projet/ProtectionPWD/node_modules/body-parser/README.md",
     "Dev/Projet/ProtectionPWD/node_modules/math-intrinsics/README.md",
-    "Dev/Projet/ProtectionPWD/node_modules/express/Readme.md",
-    "Dev/Projet/ProtectionPWD/node_modules/math-intrinsics/CHANGELOG.md",
-    "Dev/Projet/ProtectionPWD/node_modules/has-symbols/README.md",
-    "Dev/Projet/ProtectionPWD/node_modules/has-symbols/CHANGELOG.md",
-    "Dev/Projet/ProtectionPWD/node_modules/negotiator/README.md",
-    "Dev/Projet/ProtectionPWD/node_modules/mime-db/README.md",
-    "Dev/Projet/ProtectionPWD/node_modules/mime-db/HISTORY.md",
-    "Dev/Projet/ProtectionPWD/node_modules/body-parser/node_modules/content-type/README.md",
-    "Dev/Projet/ProtectionPWD/node_modules/es-errors/README.md",
-    "Dev/Projet/ProtectionPWD/node_modules/call-bind-apply-helpers/README.md"
+    "Dev/Projet/ProtectionPWD/node_modules/express/Readme.md"
   ]
 }

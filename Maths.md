@@ -1,4 +1,4 @@
-# Chapitre 1 : Les MAtrices
+# Chapitre 1 : Les Matrices
 ## 1) Structure de la matrice  
 
 $M=\begin{pmatrix} 2&3\\4&1\\3&2 \end{pmatrix}$ 
@@ -240,3 +240,45 @@ $$
 95&106&117
 \end{pmatrix}
 $$
+Exemple N°2
+
+$$
+A = \begin{pmatrix}
+2&0 \\
+1&3 \\
+4&1
+\end{pmatrix};
+B = \begin{pmatrix}
+3&2&1 \\
+0&1&2
+\end{pmatrix}
+$$
+
+$$
+A\times B = \begin{pmatrix}
+2\times 3 + 0\times 0 && 2\times 2 + 0\times 1 && 2\times 1 + 0 \times 2 \\
+1\times 3 + 3 \times 0 && 1\times 2 + 3 \times 1 && 1 \times 1 + 3 \times 2 \\
+4\times 3 + 1 \times 0 && 4\times 2 + 1 \times 1 && 4\times 1 +1\times 2
+\end{pmatrix}
+$$
+$$
+= \begin{pmatrix}
+6&4&2 \\
+3&5&7 \\
+12&9&6
+\end{pmatrix}
+$$
+# Chapitre 2 : Congruence
+## 1) Introduction
+
+a) $$
+17\div5 = 2 (r =3)
+$$
+b) $$
+17=3\times 5 +2
+$$
+
+$$
+\boxed{17 \equiv 2 [5]}
+$$
+17 congru à 2 modulo 5

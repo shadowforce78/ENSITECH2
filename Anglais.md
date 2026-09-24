@@ -18,3 +18,6 @@ I have a car
 8 => b
 
 ![[Drawing 2026-09-11 17.27.51.excalidraw]]
+
+![[Drawing 2026-09-18 17.20.28.excalidraw]]
+![[Drawing 2026-09-18 17.39.12.excalidraw]]
