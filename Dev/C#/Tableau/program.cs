@@ -43,16 +43,6 @@ namespace RemplirTab1D
             return TheMax; 
         } 
 
-        static int FindMoyenne(int[] Tablo, int taille) 
-        { 
-            int Somme = 0; 
-            for (int i = 0; i < taille; i++) 
-            { 
-                Somme += Tablo[i]; 
-            } 
-            return Somme / taille; 
-        }
-
         static void Sortab(ref int[] Tablo, int taille) 
         { 
             for (int i = 0; i < taille; i++) 
@@ -66,6 +56,16 @@ namespace RemplirTab1D
                     } 
             } 
         } 
+
+        static int FindMoyenne(int[] Tablo, int taille) 
+        { 
+            int Somme = 0; 
+            for (int i = 0; i < taille; i++) 
+            { 
+                Somme += Tablo[i]; 
+            } 
+            return Somme / taille; 
+        }
 
         static void SupprimerValeur(ref int[] Tablo, int valeurASupprimer) 
         { 
