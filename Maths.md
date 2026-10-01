@@ -282,3 +282,73 @@ $$
 \boxed{17 \equiv 2 [5]}
 $$
 17 congru à 2 modulo 5
+
+
+### Exemple 1 : $\text{"Méthode"}$
+
+$273 487 \equiv ? [26]$ 
+
+$\frac{273487}{26}\approx 10518,73$
+$273 487 - 26\times 10518 = 19$ 
+
+Sachant que :
+$273 487 = 26\times 10518 + 19$
+Donc $273487 \equiv 19[26]$ 
+
+
+### Exemple 2 : $\text{"Méthode"}$ 
+
+$-17 \equiv ? [5]$
+
+$\frac{17}{5}\approx 3,4$  
+$17-5\times 3=2$
+
+Sachant que
+$17=5\times 3 +2$ 
+$17 \equiv 2[5]$
+$-17 \equiv -2[5]$ 
+$-17\equiv 5-2[5]$
+$-17\equiv 3[5]$
+Donc $-17\equiv 3 [5]$
+
+### Remarque : Si deux chiffres données ne sont pas multipliable (trop grand)
+
+$2^4 \times 3^3 \equiv ? [5]$ 
+1ère etape : 
+	$2^4 \equiv ?[5]$
+	sachant que $16=5\times 3 +1$
+	donc $16 \equiv 1 [5]$
+
+2ème etape :
+	$3^3\equiv ? [5]$
+	sachant que $27=5\times 5 +2$
+	donc $27 \equiv 2[5]$
+
+3ème etape :
+	$2^4 \times 3^3 \equiv ? [5]$
+	$16\times 27 \equiv 1 \times 2 [5]$
+	$16\times 27 \equiv 2[5]$
+
+## Surjection : "Application"
+
+![[Drawing 2026-09-25 09.56.20.excalidraw]]
+Chaque image possède au moins 1 antécédent
+
+## Injection : "Application"
+![[Drawing 2026-09-25 10.04.49.excalidraw]]
+Il existe une ou des images qui n'ont pas d'antécédent
+
+## Bijection "Application"
+![[Drawing 2026-09-25 10.08.14.excalidraw]]
+Chaque image possède un unique antécédent
+
+
+## Remarque
+### 1) Nombre premiers
+	$1;2;3;5;7;11;13;17;19;23$
+
+### 2) Deux nombres premiers entre eux :
+	$16= 1\times 2 \times 2 \times 2\times 2$
+	$15=1 \times 3 \times 5$
+	$PGCD(15;16)=1$
+	

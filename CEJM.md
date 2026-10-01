@@ -32,18 +32,34 @@
 ## Cas pratique chap 2
 
 1) Pourquoi l'entreprise AirBnB fait-elle partie de l'économie de l'usage
-	1)  En utilisant AirBnB on ne paye pas pour un droit de propriété sur un objet quelquoncques mais pour un droit d'usage (en l'occurence ici un logement)
+	1)  L'économie de l'usage est un modèle économique qui privilégie l'utilisation d'un bien ou d'un service par la location, le partage ou l'abonnement, plutôt qie son acquisition par l'achat et la possession; AirBnb propose un service d'hébergement qui consiste a louer un logement a des particuliers. Ce service de particulier a particulier relève de l'économie collaborative  
 
 2) Montrez que le système appliqué par AirBnB permet de construire un profil des utilisateurs deux faces de la plateforme
-	1) Ça créé un profil a deux faces avec :
-		1) Les vendeurs (qui propose la location)
-		2) Les acheteurs (qui loue le logement)
+	1) Le profil des utilisateurs des deux faces de la plateforme sont construit a travers leur compte mais aussi a travers l'avis qu'ils ont pu donnés a la fin de leur séjour, permettant une transparance des informations et donc évitant ainsi l'asymétrie d'information  
 
 3) En quoi le fonctionnement  de la plateforme influence-t-il les modes de consommation des utilisateurs ?
-	1) Avec leur système de commentaire intégrés, les clients n'ont pas a aller faire des recherches plus poussé de leur coté
+	1) Grace aux avis et a l'experience client, les futurs utilisateurs de la plateforme Airbnb ont accès a des informations sur la qualité du service rendu et oriente leur choix en conséquence 
 
 4) Pourquoi peut-on parler d'un business model en plateforme ?
-	1) Parce que le systeme de tarification change en fonction du modèle choisis
+	1) Le business modèle en plateforme repose sur l'intermédiation numérique permettant à deux ou plusieurs groupes d'utilisateurs distincts (par exemple, des acheters et des vendeurs) d'intéragir et de réaliser des transactions. Ainsi, dans le business model d'airbnb les deux faces (en C to C) intéragissent mais le réseau de partenaire constitue un écosystème permettant d'améliorer le service.
 
 5) Face à l'évolution des reglementations concernant la location de courte  durée, comment AirBnB envisage-t-elle de continuer à créer de la valeur ?
-	1) AirBnb a lancé plusieurs services différents de la simple location courte durée, comme par exemple la construction d'immeuble
+	1) L'activité principale d'airbnb etant entravé par les nouvelles reglementation, ils ont du s'adapter nottament au nouvelle forme de trvail et developpe une offre de location de moyenne durée (2/3 mois) ce qui leur permet de continuer a créé de la valeur 
+
+
+
+# Chapitre 3
+
+## Sylogisme
+
+	Fait : 
+		Le comité de direction de Cdiscount a fait installé un système de vidéo surveillance dans un entrepot afin de proteger du vol cette zone de stockage de produit a forte valeur ajoutée. Le CSE et le DPO ont été informé de ce dispositif. Un salarié a été accusé de vol a la suite du visionnage des vidéos surveillance. Il conteste la validité juridique de cette installation
+
+	Problème : 
+		A quelle condition l'installation d'un système de vidéo surveillance est elle légale ?
+
+	Règle de droit :
+		- L'article 9 du code civil rappelle : Chacun a droit au respect de sa vie privé
+		- Selon l'article L. 1121-1 du code du travail, CACA DANS LE SAC
+		- Selon l'article L. 1222-4 du code du travail, aucune information personnelle sur un salarié ne peut etre ne peut etre collecter par un appareil dont il n'a pas connaissance
+		- 

@@ -70,3 +70,4 @@ Impact sur la disponibilité et l'intégrité : les sauvegardes stockées sont c
 
 ![[Drawing 2026-09-17 10.42.39.excalidraw]]
 ![[Drawing 2026-09-17 11.31.35.excalidraw]]
+![[Drawing 2026-10-01 11.48.17.excalidraw]]
