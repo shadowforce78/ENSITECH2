@@ -129,7 +129,6 @@ namespace RemplirTab1D
             Console.WriteLine("La moyenne vaut " + moyenne); 
 
             // Exo 3 : Remplissez un tableau avec 10 valeurs entières aléatoires comprises entre 0 et 20.  choisissez  aléatoirement K une valeur pivot contenue dans le tableau.  on déplacera les éléments du tableau de manière à regrouper en tête de celui-ci toutes  les valeurs inférieures à K et en queue, les valeurs supérieures à K. 
-            // On tire UNE seule fois un indice au hasard, et on lit la valeur du tableau à cet indice
             int K = Tablo[new Random().Next(0, taille)];
             Console.WriteLine("La valeur pivot est : " + K);
             DeplacerPivot(ref Tablo, K);
