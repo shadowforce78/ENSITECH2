@@ -351,4 +351,140 @@ Chaque image possède un unique antécédent
 	$16= 1\times 2 \times 2 \times 2\times 2$
 	$15=1 \times 3 \times 5$
 	$PGCD(15;16)=1$
-	
+
+
+# Chapitre 3: Graphe orienté
+## 1) Représentation sagittale
+
+![[Drawing 2026-10-02 08.39.09.excalidraw]]
+
+Remarques :
+![[Drawing 2026-10-02 08.46.27.excalidraw]]
+Il faut compter toutes les flèches
+Sur le graphe précédent il y a 7 flèches
+
+## 2) Propriétées 
+1) L'ensemble du Graphe G ou bien définition du Graphe G
+	1) G : {(A;A), (A;B), (A;C), (A;D), (B;D), (C;B), (D;C)}
+2) Arcs
+	1) (B;D), (A;A) => Sont des arcs
+3) L'ensemble des sommets
+	1) S:{A;B;C;D}
+4) Chemin de longueur 3 
+	1) chemin de longueur n <=> (n+1) sommets, 
+	2) chemin de longueur 3 => 4 sommets
+	3) (A;B;D;C)
+	4) (A;D;C;B)
+	5) (A;A;D;C)
+5) Boucle
+	1) Une boucle != un circuit
+	2) une boucle est un chemin de longueur 1; tel que le sommet de départ = sommet d'arriver (A;A) 
+6) Circuit
+	1) Un circuit est un chemin de longueur minimum de 2 tel que le sommet de départ est le même sommet d'arrivé
+	2) Exemple : 
+	3) (C;B;D;C)
+	4) (B;D;C;B)
+	5) (D;C;B;D) 
+7) Chemin Hamiltonien 
+	1) un chemin hamiltonien est un chemin passant par tout les sommets une seule fois
+	2) (A;B;D;C)
+	3) (A;D;C;B)
+	4) (A;C;B;D)
+
+## Prédécesseurs / Successeurs
+
+
+| Sommets | $\gamma +$ | $\gamma -$ |
+| ------- | ---------- | ---------- |
+| A       | A; B; C; D | A          |
+| B       | D          | A; C       |
+| C       | B          | A; D       |
+| D       | C          | A; B       |
+| Total   | 7          | 7          |
+
+## 4 Matrice des adjacente
+
+	$$
+	M = \begin{pmatrix}
+	1&1&1&1 \\
+	0&0&0&1 \\
+	0&0&1&0
+	\end{pmatrix}
+	$$
+	Au total le nombre de 1 égale à 7
+
+
+### Exo
+
+Soit la matrice adjacente M du graphe G
+
+$$
+M=\begin{pmatrix}
+0&0&0&1&1\\
+0&0&1&0&0\\
+0&0&0&0&0\\
+0&1&0&0&0\\
+0&1&1&0&0
+\end{pmatrix}
+$$
+
+Sommets : 1 = A, 2 = B, 3 = C, 4 = D, 5 = E
+
+**1) Représentation sagittale**
+
+![[Graphe exo sagittal.excalidraw]]
+
+Arcs : A→D, A→E, B→C, D→B, E→B, E→C
+
+**2) Deux chemins de longueur 3**
+- (A;D;B;C)
+- (A;E;B;C)
+
+**3) Un chemin de longueur 4**
+
+Il n'en existe pas : le graphe n'a aucun circuit ni boucle, et C est un puits (aucun successeur). Les chemins les plus longs sont (A;D;B;C) et (A;E;B;C), de longueur 3.
+
+**4) Tableau $\gamma +$ et $\gamma -$**
+
+| Sommets | $\gamma +$ | $\gamma -$ |
+| ------- | ---------- | ---------- |
+| A       | D; E       | ∅          |
+| B       | C          | D; E       |
+| C       | ∅          | B; E       |
+| D       | B          | A          |
+| E       | B; C       | A          |
+| Total   | 6          | 6          |
+
+**5) $M^2$**
+
+Colonnes de $M$ : $C_A=(0,0,0,0,0)$, $C_B=(0,0,0,1,1)$, $C_C=(0,1,0,0,1)$, $C_D=(1,0,0,0,0)$, $C_E=(1,0,0,0,0)$
+
+*Ligne A* $=(0,0,0,1,1)$ :
+- $A\to A$ : $0\times0+0\times0+0\times0+1\times0+1\times0 = 0$
+- $A\to B$ : $0\times0+0\times0+0\times0+1\times1+1\times1 = 2$
+- $A\to C$ : $0\times0+0\times1+0\times0+1\times0+1\times1 = 1$
+- $A\to D$ : $0\times1+0\times0+0\times0+1\times0+1\times0 = 0$
+- $A\to E$ : $0\times1+0\times0+0\times0+1\times0+1\times0 = 0$
+
+*Ligne B* $=(0,0,1,0,0)$ : elle ne sélectionne que la ligne C de $M$, qui est nulle, donc toute la ligne vaut $(0,0,0,0,0)$.
+
+*Ligne C* $=(0,0,0,0,0)$ : ligne nulle, donc $(0,0,0,0,0)$.
+
+*Ligne D* $=(0,1,0,0,0)$ : elle sélectionne la ligne B de $M$, donc $(0,0,1,0,0)$.
+
+*Ligne E* $=(0,1,1,0,0)$ : ligne B + ligne C de $M$ $=(0,0,1,0,0)+(0,0,0,0,0)=(0,0,1,0,0)$.
+
+Résultat :
+
+$$
+M^2=\begin{pmatrix}
+0&2&1&0&0\\
+0&0&0&0&0\\
+0&0&0&0&0\\
+0&0&1&0&0\\
+0&0&1&0&0
+\end{pmatrix}
+$$
+
+Nombre total de chemins de longueur 2 : 2 + 1 + 1 + 1 = **5**
+(A;D;B), (A;E;B), (A;E;C), (D;B;C), (E;B;C)

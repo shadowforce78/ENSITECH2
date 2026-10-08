@@ -45,3 +45,6 @@ POSTE = (<u>ID</u>, nomPoste)
 
 ? Nom, Prenom, Service de tous les "chef de projet"
 ![[Drawing 2026-09-24 14.09.57.excalidraw]]
+
+# Exo Algèbre Relationnelle :
+![[Drawing 2026-10-08 11.07.07.excalidraw]]

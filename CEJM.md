@@ -60,6 +60,15 @@
 
 	Règle de droit :
 		- L'article 9 du code civil rappelle : Chacun a droit au respect de sa vie privé
-		- Selon l'article L. 1121-1 du code du travail, CACA DANS LE SAC
+		- Selon l'article L. 1121-1 du code du travail, nul ne peux infligé de restrictions que ne seraient pas justifiées par le contexte de base
 		- Selon l'article L. 1222-4 du code du travail, aucune information personnelle sur un salarié ne peut etre ne peut etre collecter par un appareil dont il n'a pas connaissance
-		- 
+		- Selon l'article L. 2312-38 du code du trvail, le CSE est informé au préalable de toutes les méthodes et dispositifs mis en place dans l'entreprise quand elle concerne les salariés
+		- Selon l'article 266-18 du code pénal, collecter des données personnels de façon frauduleuse est puni de 5 ans d'emprisonnement et 300 000€ d'amende
+		- Selon l'article 226-20 du code pénal, conserver des données personnels plus longtemps que le prévois la loi est puni de 5 ans d'emprisonement et 300 000€ d'amande, sauf si a but historique, de statistique ou scientifique
+		- D'après l'extrait de la décision de la cour de cassation, chambre sociale du 10 janvier 2012, l'employeur peut controler l'activité de ses salariés il ne peut pas utiliser les preuves de vidéosruveillance si les intéressés n'ont pas été informé de l'existence des dispositif
+
+	Solution :
+		En l'espèce, l'employeur peut installer une vidéosurveillance pour protéger ses biens (art. L. 1121-1), à condition d'informer le CSE (fait ici) et les salariés (art. L. 1222-4 : non mentionné dans les faits). D'après la Cour de cassation (10 janvier 2012), sans information des salariés, la preuve par vidéo est illicite.
+
+	Conclusion :
+		L'installation de la vidéosurveillance est légale à condition que l'employeur ait poursuivi un but légitime et proportionné, informé et consulté le CSE (fait) et informé les salariés (non établi dans les faits). Si les salariés n'ont pas été informés, les vidéos ne peuvent pas être utilisées comme preuve : le salarié peut contester avec succès l'accusation de vol et la sanction éventuelle pourrait être annulée.
