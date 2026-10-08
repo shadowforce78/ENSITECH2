@@ -14,6 +14,7 @@ static class Menu
         ("Tri ligne par ligne (Q8)",                TriLignes),
         ("Tri global (Q9)",                         TriGlobal),
         ("Points cols (Q10)",                       PointsCols),
+        ("Ajouter un point col s'il n'y en a pas",  AjouterPointCol),
         ("Réafficher le tableau",                   () => Affichage.Afficher(tab)),
         ("Nouveau tableau",                         Creer),
     };
@@ -101,5 +102,13 @@ static class Menu
     {
         Affichage.Titre("Points cols (magenta)");
         Affichage.Afficher(tab, (i, j) => Tableau.EstPointCol(tab, i, j), ConsoleColor.Magenta);
+    }
+
+    static void AjouterPointCol()
+    {
+        if (Tableau.ACol(tab)) { Console.WriteLine("Le tableau a déjà un point col."); return; }
+        Tableau.AjouterPointCol(tab);
+        Affichage.Titre("Point col ajouté en (0,0)");
+        PointsCols();
     }
 }

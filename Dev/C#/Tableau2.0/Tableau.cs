@@ -65,4 +65,20 @@ static class Tableau
         for (int k = 0; k < tab.GetLength(0); k++) if (tab[k, j] > tab[i, j]) return false;
         return true;
     }
+
+    public static bool ACol(int[,] tab)
+    {
+        for (int i = 0; i < tab.GetLength(0); i++)
+            for (int j = 0; j < tab.GetLength(1); j++)
+                if (EstPointCol(tab, i, j)) return true;
+        return false;
+    }
+
+    // Force un point col en (0,0) : le reste de la ligne 0 est relevé à v, le reste de la colonne 0 abaissé à v
+    public static void AjouterPointCol(int[,] tab)
+    {
+        int v = tab[0, 0];
+        for (int k = 1; k < tab.GetLength(1); k++) tab[0, k] = Math.Max(tab[0, k], v);
+        for (int k = 1; k < tab.GetLength(0); k++) tab[k, 0] = Math.Min(tab[k, 0], v);
+    }
 }
