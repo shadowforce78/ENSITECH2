@@ -1,5 +1,3 @@
-![[codefinal.png]]
-
 # Étude de cas : gestion des demandes de formation
 
 ![[Pasted image 20261001142317.png]]

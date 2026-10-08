@@ -4,49 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "81e0d06da6d014f1",
+        "id": "f5c060fe476c3fc0",
         "type": "tabs",
         "children": [
           {
-            "id": "4d7dcb8fa2314803",
+            "id": "0a5afbf6c518491f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BDD.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "BDD"
-            }
-          },
-          {
-            "id": "9fc313ea466ede74",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-10-08 11.07.07.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-08 11.07.07.excalidraw"
-            }
-          },
-          {
-            "id": "54f40d0a9302c22b",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/symboles algebres.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "symboles algebres.excalidraw"
+              "title": "Nouvel onglet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,9 +185,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:Créer un nouveau canvas": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
@@ -225,8 +196,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9fc313ea466ede74",
+  "active": "a0c40acb3d569247",
   "lastOpenFiles": [
+    "Dev/PrepaEtudeCas1 Reponse.md",
+    "Dev/PrepaEtudeCas1 Reponse.pdf",
+    "Excalidraw/Drawing 2026-10-08 11.07.07.excalidraw.md",
+    "Dev.md",
+    "Dev/PrepaEtudeCas1.pdf",
+    "Excalidraw/symboles algebres.excalidraw.md",
     "Dev/C#/GetSet/Exo2.cs",
     "Dev/C#/GetSet/Exo1.cs",
     "Dev/C#/GetSet/program.cs.tmp.23405.33408f8af9c3",
@@ -235,10 +212,7 @@
     "Dev/C#/GetSet/Les accesseurs en c#.pdf",
     "Dev/C#/GetSet/Les accesseurs en c#.pdf.fdmdownload",
     "Dev/C#/GetSet",
-    "Excalidraw/symboles algebres.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-08 11.07.07.excalidraw.md",
     "BDD.md",
-    "BDD/Algèbre relationnelle1.pdf",
     "Pasted Image 20261008111414_054.png",
     "Pasted Image 20261008111402_747.png",
     "Excalidraw/Drawing 2026-09-24 12.42.23.excalidraw.md",
@@ -258,10 +232,7 @@
     "img/Pasted Image 20261002170530_370.png",
     "CEJM.md",
     "Maths.md",
-    "Maths.md.tmp.37710.3d436015503e",
     "Excalidraw/Graphe exo sagittal.excalidraw.md",
-    "Maths.md.tmp.37710.8212ef4ff9ed",
-    "Dev.md",
     "img/Pasted image 20261001142317.png",
     "Excalidraw/TD Ebios Matrice 10 scenarios.excalidraw.md",
     "Cyber/Ebios/TD_EBIOS_Risk_Manager.md",
@@ -271,7 +242,6 @@
     "img/Pasted Image 20261001114833_036.png",
     "img/Pasted Image 20261001115114_640.png",
     "Excalidraw/Drawing 2026-09-25 10.08.14.excalidraw.md",
-    "Sans titre.md",
     "Excalidraw/Drawing 2026-09-25 10.04.49.excalidraw.md"
   ]
 }
