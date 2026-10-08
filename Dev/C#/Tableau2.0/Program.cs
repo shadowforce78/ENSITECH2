@@ -25,10 +25,9 @@ class Program
         return n;
     }
 
-    // 2. Valeurs aléatoires entre 0 et 9
-    // 5. Reste de a / b sans utiliser % (même signe que a, comme l'opérateur)
-    static int Modulo(int a, int b) => a - b * (a / b);
 
+
+    // 2. Valeurs aléatoires entre 0 et 9
     static void Remplir(int[,] tab)
     {
         Random rnd = new Random();
@@ -55,5 +54,16 @@ class Program
             }
             Console.WriteLine();
         }
+    }
+
+    // 5. Reste de a / b sans utiliser % (même signe que a, comme l'opérateur)
+    static int Modulo(int a, int b)
+    {
+        if (b == 0)
+            throw new DivideByZeroException("Le diviseur ne peut pas être zéro.");
+
+        int quotient = a / b;
+        int reste = a - (quotient * b);
+        return reste;
     }
 }
