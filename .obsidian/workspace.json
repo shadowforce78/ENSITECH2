@@ -4,17 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "f5c060fe476c3fc0",
+        "id": "462f5897a5c6e8af",
         "type": "tabs",
         "children": [
           {
-            "id": "0a5afbf6c518491f",
+            "id": "eca12f42c2955852",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "DST SIO 1/DST.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "DST"
+            }
+          },
+          {
+            "id": "d1f754a582d660bc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "DST SIO 1/DSTSIOSLAM#1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "DSTSIOSLAM#1"
             }
           }
         ]
@@ -154,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev.md",
+                "file": "Exo BTS Maths.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -174,9 +190,19 @@
               "icon": "lucide-info",
               "title": "Propriétés du fichier"
             }
+          },
+          {
+            "id": "41ec20f0f83a5241",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -196,52 +222,52 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a0c40acb3d569247",
+  "active": "eca12f42c2955852",
   "lastOpenFiles": [
+    "DST SIO 1/DSTSIOSLAM#1.pdf",
+    "img/Pasted Image 20261009152309_808.png",
+    "DST SIO 1/DST.md",
+    "DST SIO 1/code.png",
+    "DST SIO 1/DST.cs",
+    "DST SIO 1/MCD.excalidraw.md",
+    "DST SIO 1/MCD.excalidraw",
+    "Excalidraw/Drawing 2026-09-11 17.27.51.excalidraw.md",
+    "DST SIO 1/mcd.lo1",
+    "DST SIO 1/mcd.loo",
+    "DST SIO 1/DST.md.tmp.35871.5a98e0640df6",
+    "CEJM/Chap 4/QUESTIONS EXPOSE CHAP 4.docx",
+    "CEJM/Chap 4",
+    "DST SIO 1",
+    "Cybersécurité.md",
+    "Cyber/Cryptographie.pdf",
+    "Excalidraw/Drawing 2026-10-01 11.48.17.excalidraw.md",
+    "BDD.md",
+    "Excalidraw/Drawing 2026-10-15 10.00.04.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-15 10.00.02.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-15 10.00.03.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-15 10.00.01.excalidraw.md",
+    "Excalidraw/symboles algebres.excalidraw.md",
+    "Excalidraw/TD Ebios Matrice 10 scenarios.excalidraw.md",
+    "CEJM.md",
+    "Excalidraw/Drawing 2026-10-09 15.41.06.excalidraw.md",
+    "img/Pasted Image 20261009154106_765.png",
+    "Anglais.md",
+    "Excalidraw/Drawing 2026-10-09 15.34.10.excalidraw.md",
+    "img/Pasted Image 20261009153410_906.png",
+    "Excalidraw/Drawing 2026-10-09 15.23.08.excalidraw.md",
+    "Exo BTS Maths.md",
+    "Maths.md",
+    "Excalidraw/Drawing 2026-10-09 10.13.11.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-09 09.34.28.excalidraw.md",
+    "img/Pasted Image 20261002172517_142.png",
     "Dev/PrepaEtudeCas1 Reponse.md",
-    "Dev/PrepaEtudeCas1 Reponse.pdf",
     "Excalidraw/Drawing 2026-10-08 11.07.07.excalidraw.md",
     "Dev.md",
-    "Dev/PrepaEtudeCas1.pdf",
-    "Excalidraw/symboles algebres.excalidraw.md",
-    "Dev/C#/GetSet/Exo2.cs",
-    "Dev/C#/GetSet/Exo1.cs",
-    "Dev/C#/GetSet/program.cs.tmp.23405.33408f8af9c3",
-    "Dev/C#/GetSet/program.cs.tmp.23405.1a2d968196d5",
-    "Dev/C#/GetSet/program.cs",
-    "Dev/C#/GetSet/Les accesseurs en c#.pdf",
-    "Dev/C#/GetSet/Les accesseurs en c#.pdf.fdmdownload",
-    "Dev/C#/GetSet",
-    "BDD.md",
-    "Pasted Image 20261008111414_054.png",
-    "Pasted Image 20261008111402_747.png",
+    "img/Pasted Image 20261008111414_054.png",
+    "img/Pasted Image 20261008111402_747.png",
     "Excalidraw/Drawing 2026-09-24 12.42.23.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-25 09.56.20.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-25 15.21.27.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-02 08.39.09.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-02 08.46.27.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-02 09.25.29.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-02 17.30.58.excalidraw.md",
-    "Pasted image 20261008110611.png",
-    "Anglais.md",
-    "Pasted Image 20261002173059_659.png",
-    "Excalidraw/Drawing 2026-10-02 17.25.16.excalidraw.md",
-    "Pasted Image 20261002172517_142.png",
-    "Excalidraw/Drawing 2026-10-02 17.05.29.excalidraw.md",
-    "img/Pasted image 20261002170112.png",
-    "img/Pasted Image 20261002170530_370.png",
-    "CEJM.md",
-    "Maths.md",
-    "Excalidraw/Graphe exo sagittal.excalidraw.md",
-    "img/Pasted image 20261001142317.png",
-    "Excalidraw/TD Ebios Matrice 10 scenarios.excalidraw.md",
-    "Cyber/Ebios/TD_EBIOS_Risk_Manager.md",
-    "Excalidraw/Drawing 2026-10-01 11.48.17.excalidraw.md",
-    "Cyber/Ebios/matrice-ebios.excalidraw.md",
-    "Cybersécurité.md",
-    "img/Pasted Image 20261001114833_036.png",
-    "img/Pasted Image 20261001115114_640.png",
-    "Excalidraw/Drawing 2026-09-25 10.08.14.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-25 10.04.49.excalidraw.md"
+    "img/Pasted image 20261008110611.png",
+    "img/Pasted Image 20261002173059_659.png",
+    "img/Pasted image 20261002170112.png"
   ]
 }

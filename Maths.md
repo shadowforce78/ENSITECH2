@@ -401,6 +401,7 @@ Sur le graphe précédent il y a 7 flèches
 | C       | B          | A; D       |
 | D       | C          | A; B       |
 | Total   | 7          | 7          |
+|         |            |            |
 
 ## 4 Matrice des adjacente
 
@@ -488,3 +489,63 @@ $$
 
 Nombre total de chemins de longueur 2 : 2 + 1 + 1 + 1 = **5**
 (A;D;B), (A;E;B), (A;E;C), (D;B;C), (E;B;C)
+
+# 5 Niveau des sommets
+
+$$
+M=
+\begin{pmatrix}
+0&0&0&1&1\\
+0&0&1&0&0\\
+0&0&0&0&0\\
+0&1&0&0&0\\
+0&1&1&0&0
+\end{pmatrix}
+$$
+
+## Tableau des $\gamma + / \gamma -$ 
+
+Il y a 6 : [1]
+On ligne la matrice de gauche a droit pour les $\gamma +$ et de haut en bas pour les $\gamma -$ 
+
+| Sommets | $\gamma +$ | $\gamma -$ |
+| ------- | ---------- | ---------- |
+| A       | D/E        | ∅          |
+| B       | C          | D/E        |
+| C       | ∅          | B/E        |
+| D       | B          | A          |
+| E       | B/C        | A          |
+| Total   | 6          | 6          |
+
+# 6) Matrice de la fermeture transitive
+
+$$
+M=
+\begin{pmatrix}
+0&1&1&0\\
+0&0&1&0\\
+0&0&0&1\\
+1&0&0&0
+\end{pmatrix}
+$$
+![[Drawing 2026-10-09 09.34.28.excalidraw]]
+
+Donc la matrice de la fermeture transitive égale à :
+$M = M\oplus M^{[2]} \oplus M^{[3]} \oplus M^{[4]}$  
+
+=> $$
+\begin{pmatrix}
+2&2&3&2\\
+1&1&2&1\\
+1&1&2&2\\
+2&1&2&2
+\end{pmatrix}
+$$
+$$\hat M=
+\begin{pmatrix}
+1&1&1&1\\
+1&1&1&1\\
+1&1&1&1\\
+1&1&1&1
+\end{pmatrix}$$
+$\hat M$ tous les 0 reste 0, le reste passe a 1

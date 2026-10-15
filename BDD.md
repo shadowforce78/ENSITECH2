@@ -48,3 +48,24 @@ POSTE = (<u>ID</u>, nomPoste)
 
 # Exo Algèbre Relationnelle :
 ![[Drawing 2026-10-08 11.07.07.excalidraw]]
+
+
+# TD Algèbre Relationnelle
+
+ETUDIANT(<u>idEtudiant</u>, nom, prenom, ville)
+ENSEIGNANT(<u>idEnseignant</u>, nom, prenom)
+MATIERE(<u>idMatiere</u>, libelle)
+COURS(<u>idCours</u>, #idMatiere, #idEnseignant, anneeUniversitaire)
+INSCRIPTION(<u>#idEtudiant</u>, <u>#idCours</u>, note)
+
+## Niveau 1 — Un seul opérateur
+![[Drawing 2026-10-15 10.00.01.excalidraw]]
+
+## Niveau 2 — Projection et restriction
+![[Drawing 2026-10-15 10.00.02.excalidraw]]
+
+## Niveau 3 — Une jointure
+![[Drawing 2026-10-15 10.00.03.excalidraw]]
+
+## Niveau 4 — Plusieurs jointures et conditions
+![[Drawing 2026-10-15 10.00.04.excalidraw]]

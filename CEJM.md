@@ -72,3 +72,28 @@
 
 	Conclusion :
 		L'installation de la vidéosurveillance est légale à condition que l'employeur ait poursuivi un but légitime et proportionné, informé et consulté le CSE (fait) et informé les salariés (non établi dans les faits). Si les salariés n'ont pas été informés, les vidéos ne peuvent pas être utilisées comme preuve : le salarié peut contester avec succès l'accusation de vol et la sanction éventuelle pourrait être annulée.
+
+# Chapitre 4 
+
+## Question exposé : 
+
+
+**1/ De quoi est composé le contenu du patrimoine immatériel de l’entreprise, (exemples) ? (Doc 2+4)**
+	Le patrimoine immateriel de l'entreprise est constitué ici de nom de domaine, du site internet, des logiciels, des applications mobiles et des bases de données
+  
+
+**2/ Quelles sont les raisons du besoin de protection des actifs immatériels de l’entreprise ? (Doc 6+7)**
+	Les actifs immatériels ont besoin de protection face aux cyberattaques : ransomwares, phishing, fuites de données, attaques DDoS, et au typosquatting (nom de domaine quasi identique pour piéger les internautes).
+  
+
+**3/ Quel est le droit permettant la protection des sites internet, des logiciels et des noms de domaine ? (Doc 8+10)**
+	Les sites et logiciels sont protégés par le droit d'auteur (propriété intellectuelle), acquis sans formalité dès que l'œuvre est originale. Un nom de domaine n'est pas protégé par sa simple réservation (premier arrivé, premier servi) : il faut aussi le déposer comme marque à l'INPI (protection de 10 ans, renouvelable). 
+  
+
+**4/ Quelle est la protection de l’architecture de la base de données et du contenu de la base de données ? (Doc 13)**
+	L'architecture de la base est protégée par le droit d'auteur si elle est originale (choix de classification propres à son auteur). Le contenu est protégé par le droit sui generis (art. L. 341-1 du code de la proprieté intellectuelle) : le producteur, qui a fait un investissement substantiel, peut interdire l'extraction et la réutilisation de tout ou partie substantielle du contenu. Les deux protections sont indépendantes et cumulables.
+
+  
+
+**5/ A qui appartient un logiciel crée par le salarié en entreprise ? (Doc 16)**
+	Il appartient à l'employeur : selon l'art. L. 113-9 du Code de la Proprieté intellectuelle, les droits patrimoniaux sur un logiciel créé par un salarié dans l'exercice de ses fonctions ou d'après les instructions de l'employeur lui sont automatiquement transmis, même si le salarié l'a développé hors temps de travail ou chez lui (TGI Paris 2001, TGI Bobigny 2011).
