@@ -6,23 +6,14 @@ Dossier 1 : MCD "apports de raisin"
 
 Dossier 2 : gestion des événements redoutés
 
-1 - Le site web ne répond pas.
-Impact : les abonnés n'ont plus accès au service, risque de perte d'abonnés et de chiffre d'affaires.
-Gravité : *
-
-2 - Un attaquant accède à la base de données et modifie les articles.
-Impact : de fausses informations sont diffusées aux abonnés, perte de confiance et mauvaise image de l'entreprise, risque juridique.
-Gravité : **
+![[SECURITÉ.excalidraw]]
 
 Besoins en sécurité (D / I / C / P)
 
-1 - PDF : ** / ** / * / -
+2 - Pas de confidentialité car les commentaires sont publics. Il faut pouvoir retrouver l'auteur en cas de problème.
 
-2 - Commentaires publics : * / * / - / **
-Pas de confidentialité car les commentaires sont publics. Il faut pouvoir retrouver l'auteur en cas de problème.
-
-3 - Mot de passe : * / ** / ** / *
-Le mot de passe doit rester secret et ne doit être modifiable que par son propriétaire.
+3 - Le mot de passe doit rester secret et ne doit être modifiable que par son propriétaire.
+![[BESOIN]]
 
 Dossier 3
 
