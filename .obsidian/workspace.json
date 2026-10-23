@@ -8,27 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a913511d0398eb70",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "DST SIO 1/DST.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "DST"
-            }
-          },
-          {
             "id": "e9fee822e9e24d32",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "DST SIO 1/DSTSIOSLAM#1.pdf"
+                "file": "BDD.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "DSTSIOSLAM#1"
+              "icon": "lucide-file",
+              "title": "BDD"
             }
           }
         ]
@@ -220,38 +210,42 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a913511d0398eb70",
+  "active": "e9fee822e9e24d32",
   "lastOpenFiles": [
+    "BDD/Trigger et Procedures stockées avec Mysql (2).pdf",
+    "BDD/TD_MySQL_Etudiant.pdf",
+    "BDD/TD_MySQL_Etudiant.pdf.fdmdownload",
+    "BDD/MySQL_Workbench_Fiche_Synthetique.pdf",
+    "BDD/MySQL_Workbench_Fiche_Synthetique.pdf.fdmdownload",
+    "CEJM.md",
+    "CEJM/Chap 5/QUESTIONS EXPOSE CHAP 5.docx",
+    "CEJM/Chap 5/QUESTIONS EXPOSE CHAP 5.docx.fdmdownload",
+    "CEJM/Chap 5",
+    "Syllogisme Mobile+.md",
+    "Syllogisme Mobile+.md.tmp.13810.414e823a2192",
+    "BDD.md",
+    "Syllogisme Mobile+.md.tmp.13810.462ae35ac8e0",
+    "CEJM/Chap 4/EXO SUPPLEMENTAIRE CHAP 4 CAS MOBILE +.docx",
+    "img/Pasted Image 20261015145757_667.png",
+    "img/Pasted Image 20261015145326_790.png",
     "DST SIO 1/DST.md",
-    "DST SIO 1/DST.pdf",
     "DST SIO 1/SECURITÉ.excalidraw.md",
     "DST SIO 1/BESOIN.md",
-    "DST SIO 1/DSTSIOSLAM#1.pdf",
     "Pasted Image 20261015145757_667.png",
     "DST SIO 1/BESOIN.excalidraw.md.md",
     "Pasted Image 20261015145326_790.png",
     "img/Pasted Image 20261009152309_808.png",
     "DST SIO 1/code.png",
-    "DST SIO 1/DST.cs",
     "DST SIO 1/MCD.excalidraw.md",
-    "DST SIO 1/MCD.excalidraw",
     "Excalidraw/Drawing 2026-09-11 17.27.51.excalidraw.md",
-    "DST SIO 1/mcd.lo1",
-    "DST SIO 1/mcd.loo",
-    "DST SIO 1/DST.md.tmp.35871.5a98e0640df6",
-    "CEJM/Chap 4/QUESTIONS EXPOSE CHAP 4.docx",
-    "CEJM/Chap 4",
-    "DST SIO 1",
     "Cybersécurité.md",
     "Excalidraw/Drawing 2026-10-01 11.48.17.excalidraw.md",
-    "BDD.md",
     "Excalidraw/Drawing 2026-10-15 10.00.04.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.02.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.03.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.01.excalidraw.md",
     "Excalidraw/symboles algebres.excalidraw.md",
     "Excalidraw/TD Ebios Matrice 10 scenarios.excalidraw.md",
-    "CEJM.md",
     "Excalidraw/Drawing 2026-10-09 15.41.06.excalidraw.md",
     "img/Pasted Image 20261009154106_765.png",
     "Anglais.md",
@@ -263,9 +257,6 @@
     "Excalidraw/Drawing 2026-10-09 10.13.11.excalidraw.md",
     "Excalidraw/Drawing 2026-10-09 09.34.28.excalidraw.md",
     "img/Pasted Image 20261002172517_142.png",
-    "Dev/PrepaEtudeCas1 Reponse.md",
-    "img/Pasted Image 20261008111414_054.png",
-    "img/Pasted Image 20261008111402_747.png",
-    "img/Pasted image 20261008110611.png"
+    "img/Pasted Image 20261008111414_054.png"
   ]
 }

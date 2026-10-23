@@ -97,3 +97,40 @@
 
 **5/ A qui appartient un logiciel crée par le salarié en entreprise ? (Doc 16)**
 	Il appartient à l'employeur : selon l'art. L. 113-9 du Code de la Proprieté intellectuelle, les droits patrimoniaux sur un logiciel créé par un salarié dans l'exercice de ses fonctions ou d'après les instructions de l'employeur lui sont automatiquement transmis, même si le salarié l'a développé hors temps de travail ou chez lui (TGI Paris 2001, TGI Bobigny 2011).
+
+
+## Syllogisme Chap 4
+
+	Fait :
+		Thierry Gomez, assistant comptable dans la SARL Mobile+ (qui conçoit des applications pour téléphone portable), a développé, pendant ses temps de repos mais avec le matériel de l'entreprise, une application de traitement automatisé des factures. Son employeur lui interdit de la commercialiser en invoquant la clause 23 de son contrat de travail, selon laquelle tous les logiciels créés par le salarié appartiennent à l'entreprise, dans ou hors de l'exécution de ses fonctions. Thierry conteste et veut connaître ses droits.
+	
+	Problème :
+		Quelles sont les conditions de propriété des logiciels conçus en entreprise ? Est ce que l'entreprise Mobile + est propriétaire du logiciel créé par le salarié ?
+
+	Règle de droit :
+		- D'après l'article L. 111-1 du code de la propriété intellectuelle (CPI), celui qui crée une œuvre en est automatiquement propriétaire, sans formalité, et peut l'opposer à tout le monde
+		- L'article L. 113-9 du CPI prévoit une exception pour les logiciels : quand un salarié en crée un, c'est l'employeur qui détient les droits patrimoniaux, sauf si une règle ou un contrat prévoit le contraire
+
+	Solution :
+		En l'espèce, Thierry est salarié de Mobile+ et a développé son application avec les ordinateurs de l'entreprise. L'utilisation du matériel de l'employeur montre que le logiciel a été créé dans l'exercice de ses fonctions, même si c'était pendant ses temps de repos. Les conditions de l'article L. 113-9 sont donc remplies : les droits patrimoniaux reviennent automatiquement à Mobile+, et la clause 23 ne fait que confirmer cette règle. En revanche, Thierry conserve son droit moral, qui est incessible.
+
+	Conclusion :
+		Mobile+ est propriétaire des droits patrimoniaux sur l'application, car Thierry l'a créée en tant que salarié avec les moyens de l'entreprise : l'employeur peut donc lui interdire de la commercialiser. Thierry garde néanmoins son droit moral d'auteur (paternité, respect de l'œuvre).
+
+
+# Chapitre 5
+
+## Question exposé :
+
+**1/ Quelles sont les conditions de validité de la preuve électronique ? (Doc 1 à 5)**
+	La dématérialisation, c'est passer du papier au numérique. Pour qu'un écrit électronique soit une preuve, il faut identifier son auteur et garantir qu'il n'a pas été modifié. Un e-mail sans signature n'est qu'un commencement de preuve. La signature électronique, avec un certificat délivré par une autorité de certification (ex : ChamberSign), est présumée fiable. Exemple : la lettre recommandée électronique vaut un recommandé papier si l'identité et les dates sont garanties et si le destinataire particulier est d'accord.
+
+**2/ Quels sont les moyens de protection du cyberconsommateur ? (Doc 8+11+12+15+17)**
+	Les e-commerçants doivent respecter le RGPD : consentement pour les cookies, accord préalable pour la newsletter, collecte limitée aux données utiles. Le cyberacheteur a aussi droit à l'information (prix, produit, vendeur, livraison), au double-clic pour valider sa commande, à l'archivage du contrat 10 ans dès 120 €, et à un droit de rétractation de 14 jours.
+
+**3/ Identifiez des clauses dans un contrat de prestation de services numérique entre professionnels ? (Doc 20 à 23)**
+	- Objet : la prestation fournie (hébergement, location et maintenance d'une application)
+	- Responsabilité : l'hébergeur n'est pas responsable du contenu du site du client
+	- Obligations du client : pas de contenus illégaux et il garantit détenir les droits sur ses contenus
+	- Réversibilité : en fin de contrat, le client récupère ses données ou change de prestataire
+	- Confidentialité : chaque partie garde secrètes les informations de l'autre
