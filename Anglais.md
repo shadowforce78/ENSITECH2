@@ -27,4 +27,7 @@ I have a car
 ![[Drawing 2026-10-02 17.30.58.excalidraw]]
 ![[Drawing 2026-10-09 15.23.08.excalidraw]]
 ![[Drawing 2026-10-09 15.34.10.excalidraw]]
-
+![[Drawing 2026-10-23 14.18.00.excalidraw]]
+![[Drawing 2026-10-23 14.19.29.excalidraw]]
+![[Drawing 2026-10-23 14.51.44.excalidraw]]
+![[Drawing 2026-10-23 15.41.40.excalidraw]]
