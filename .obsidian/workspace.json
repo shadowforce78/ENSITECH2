@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "19150db950d6279a",
+        "id": "6da0766ccff768b2",
         "type": "tabs",
         "children": [
           {
-            "id": "8b76be2dfd754e6c",
+            "id": "16fc247d2d604c10",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Cyber/easy2drive/Dossier_A.md",
-                "mode": "source",
-                "source": false
+                "file": "Cyber/Injections SQL et requêtes préparées.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Dossier_A"
+              "icon": "lucide-file-text",
+              "title": "Injections SQL et requêtes préparées"
             }
           }
         ]
@@ -194,7 +192,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,52 +208,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8b76be2dfd754e6c",
+  "active": "16fc247d2d604c10",
   "lastOpenFiles": [
-    "img/Pasted Image 20261023152428_531.png",
-    "DST SIO 1/DST.md",
-    "DST SIO 1/DST.pdf",
-    "DST SIO 1/DSTSIOSLAM#1.pdf",
-    "Cyber/easy2drive/Dossier_A.md",
-    "Progression Péda.md",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.csproj.FileListAbsolute.txt",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.pdb",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/ref/Vigenere.dll",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.dll",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.runtimeconfig.json",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.genruntimeconfig.cache",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.deps.json",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/apphost",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/refint/Vigenere.dll",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.pdb",
+    "BDD.md",
+    "Cas pratique chapitre 6.md",
+    "CEJM.md",
+    "Maths.md",
+    "Maths/archi pas le corrigé.png",
+    "Excalidraw/Drawing 2026-11-06 11.49.10.excalidraw.md",
+    "Pasted Image 20261106114911_694.png",
+    "Maths/Exo.png",
     "img/Pasted Image 20261023154141_552.png",
+    "img/Pasted Image 20261023152428_531.png",
     "img/Pasted Image 20261023145145_240.png",
-    "DST SIO 1/SECURITÉ.excalidraw.md",
-    "Dev/C#/Tableau2.0/obj/Debug/net10.0/Tableau2.0.assets.cache",
-    "Dev/C#/Tableau2.0/obj/Tableau2.0.csproj.nuget.dgspec.json",
-    "Dev/C#/Tableau2.0/obj/project.nuget.cache",
-    "Dev/C#/Tableau2.0/obj/project.assets.json",
-    "Dev/C#/Tableau2.0/obj/Tableau2.0.csproj.nuget.g.targets",
-    "Dev/C#/Tableau2.0/obj/Tableau2.0.csproj.nuget.g.props",
-    "Dev/C#/Tableau2.0/obj/d2a6e0f2-22a1-4f95-a6be-756befc7ae3c.tmp",
-    "Dev/C#/Tableau2.0/obj/Debug/net10.0/Tableau2.0.AssemblyInfo.cs",
-    "DST SIO 1/MCD.excalidraw.md",
-    "DST SIO 1/BESOIN.md",
-    "DST SIO 1/code.png",
+    "img/Pasted Image 20261023141930_038.png",
+    "img/Pasted Image 20261023141802_929.png",
     "Excalidraw/Drawing 2026-10-23 15.41.40.excalidraw.md",
-    "Anglais.md",
     "Excalidraw/Drawing 2026-10-23 15.24.26.excalidraw.md",
     "Excalidraw/Drawing 2026-10-23 14.51.44.excalidraw.md",
     "Excalidraw/Drawing 2026-10-23 14.19.29.excalidraw.md",
     "Excalidraw/Drawing 2026-10-23 14.18.00.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-09 15.23.08.excalidraw.md",
-    "img/Pasted Image 20261023141930_038.png",
-    "img/Pasted Image 20261023141802_929.png",
-    "BDD.md",
-    "CEJM.md",
+    "Cyber/easy2drive/Dossier_B.md",
+    "Cyber/easy2drive/Dossier_A.md",
     "Syllogisme Mobile+.md",
     "img/Pasted Image 20261015145757_667.png",
     "img/Pasted Image 20261015145326_790.png",
-    "Pasted Image 20261015145757_667.png",
+    "DST SIO 1/DST.md",
+    "DST SIO 1/SECURITÉ.excalidraw.md",
+    "DST SIO 1/BESOIN.md",
     "DST SIO 1/BESOIN.excalidraw.md.md",
-    "Pasted Image 20261015145326_790.png",
+    "DST SIO 1/MCD.excalidraw.md",
     "Excalidraw/Drawing 2026-09-11 17.27.51.excalidraw.md",
     "Cybersécurité.md",
     "Excalidraw/Drawing 2026-10-01 11.48.17.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.04.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.02.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.03.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-15 10.00.01.excalidraw.md",
-    "Excalidraw/symboles algebres.excalidraw.md"
+    "Excalidraw/Drawing 2026-10-15 10.00.01.excalidraw.md"
   ]
 }

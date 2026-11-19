@@ -1,8 +1,5 @@
 using System;
 
-// Program.cs : demande les informations, appelle les méthodes et affiche les résultats.
-// Le chiffrement/déchiffrement est dans la classe Vigenere (Vigenere.cs).
-
 Vigenere outil = new Vigenere();
 
 Console.Write("Texte à chiffrer : ");

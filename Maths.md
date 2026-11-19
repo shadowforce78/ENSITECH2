@@ -549,3 +549,74 @@ $$\hat M=
 1&1&1&1
 \end{pmatrix}$$
 $\hat M$ tous les 0 reste 0, le reste passe a 1
+
+
+
+## Codage
+
+| A   | B   | C   | D   | E   | F   | G   | H   | I   | J   | K   | L   | M   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  |
+| N   | O   | P   | Q   | R   | S   | T   | U   | V   | W   | X   | Y   | Z   |
+| 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  |
+
+1) SI => 18 et 8
+	$ax+b \equiv y [16]$ 
+	clé = $(9,5)$ 
+	Pour S =>
+		$9\times 18 + 5 =167$
+		$167 / 26 = 26\times 6+11$ 
+		11 la lettre est L
+
+	Pour I =>
+		$9\times 8 + 5 =77$
+		$77/26=26\times 2 +25$ 
+		25 la lettre est Z
+
+2) 
+```python
+Fonction nbCles()
+	   nb <= 0
+	   Pour a allant de 1 à 26 faire
+		   Si pgcd(a, 26) = 1 alors
+			   nb <= nb + 1
+			Fin de Si
+		Fin de Pour
+		Renvoyer nb x 26
+```
+
+3) 
+	1)  
+```python
+   Fonction inverse(a)
+	   c <= 1
+	   Tant que reste(a x c, 26) != 1 faire
+		   c <= c +1
+		Renvoyer c
+```
+
+	2) inverse(9) = 
+		- c = 1 : 9
+		- c = 2 : 18
+		- c = 3 : 27 ≡ 1 [26]
+	
+4) . a. Montrer que si 9x + 5 ≡ y [26] alors x + 15 ≡ 3y [26]
+	
+		On multiplie les deux membres de la congruence par 3 :
+		
+		27x + 15 ≡ 3y [26]
+		
+		Or 27 ≡ 1 [26], donc 27x ≡ x [26], d’où :
+		
+		x + 15 ≡ 3y [26].
+
+4) . b. Décoder le mot ZA
+
+	D’après la question précédente, x ≡ 3y − 15 ≡ 3y + 11 [26] (car −15 ≡ 11 [26]). On utilise la correspondance A = 0, B = 1, …, Z = 25.
+	
+	- Lettre Z : y = 25  
+	    x ≡ 3 × 25 + 11 = 86 ≡ 86 − 78 = 8 [26], et 8 correspond à I.
+	- Lettre **A** : y = 0  
+	    x ≡ 3 × 0 + 11 = 11 [26], et 11 correspond à L.
+	
+	Le mot décodé est IL.

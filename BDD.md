@@ -283,3 +283,133 @@ Résultats : `(5, 3)` → **stock restant 5** ; `(5, 50)` → « Stock insuffisa
 - **Ex7 – Quels triggers ?** `trg_produit_bu_controle` (BEFORE UPDATE) et `trg_produit_au_historique` (AFTER UPDATE).
 - **Ex7 – Pourquoi aucune ligne d'historique ?** Le prix ne change pas, seul le stock varie.
 - **Ex7 – Risque lecture puis modification ?** Concurrence : une autre session peut vendre entre les deux → survente / stock négatif. Un seul `UPDATE … WHERE stock >= qte` + `ROW_COUNT()` règle ça (atomique).
+
+
+---
+
+# TD MySQL – Les vues (tp_vues_mysql)
+
+## Mise en place
+```sql
+USE tp_vues_mysql;
+
+CREATE VIEW v_produits_disponibles AS
+SELECT id, nom, prix, stock
+FROM produit
+WHERE stock > 0;
+```
+
+## Exercice 1 – Interroger une vue
+```sql
+SELECT nom, prix
+FROM v_produits_disponibles
+WHERE prix < 30
+ORDER BY prix, nom;
+```
+Résultat : Cahier (3,50), Clavier (25,00).
+
+## Exercice 2 – Créer une vue
+```sql
+CREATE VIEW v_produits_en_rupture AS
+SELECT id, nom, stock
+FROM produit
+WHERE stock = 0;
+
+SELECT * FROM v_produits_en_rupture;
+```
+Résultat : 2 lignes (Souris, Stylo).
+
+## Exercice 3 – Choisir les colonnes visibles
+```sql
+CREATE VIEW v_catalogue_public AS
+SELECT nom, prix
+FROM produit;
+
+SHOW CREATE VIEW v_catalogue_public;
+SELECT COUNT(*) FROM v_catalogue_public;
+```
+Elle renvoie **5 lignes** (aucun filtre, tous les produits ; seules les colonnes `id`, `stock`, `categorie_id` sont masquées).
+
+## Exercice 4 – Enregistrer une jointure
+```sql
+CREATE VIEW v_produits_categories AS
+	SELECT p.nom AS produit, p.prix, p.stock, c.nom AS categorie
+FROM produit p
+JOIN categorie c ON c.id = p.categorie_id;
+```
+
+## Exercice 5 – Filtrer une vue issue d'une jointure
+```sql
+SELECT produit, prix, stock
+FROM v_produits_categories
+WHERE categorie = 'Informatique' AND stock > 0;
+```
+Résultat : Clavier (10), Écran (4).
+
+## Exercice 6 – Colonne calculée
+```sql
+CREATE VIEW v_valeur_stock AS
+SELECT nom, prix * stock AS valeur_stock
+FROM produit;
+
+SELECT nom, valeur_stock
+FROM v_valeur_stock
+ORDER BY valeur_stock DESC
+LIMIT 1;
+```
+Résultat : Écran, 596,00 (149 × 4). Les autres : Clavier 250, Cahier 105, Souris 0, Stylo 0.
+
+## Exercice 7 – Résumer les stocks
+```sql
+CREATE VIEW v_stock_par_categorie AS
+SELECT c.nom AS categorie, COUNT(p.id) AS nb_references, SUM(p.stock) AS total_stock
+FROM categorie c
+JOIN produit p ON p.categorie_id = c.id
+GROUP BY c.id, c.nom;
+
+SELECT * FROM v_stock_par_categorie;
+```
+Résultat : Informatique 3 / 14, Papeterie 2 / 30 (Mobilier absent : `JOIN` = aucune ligne produit).
+
+## Exercice 8 – Inclure une catégorie vide
+```sql
+CREATE OR REPLACE VIEW v_stock_par_categorie AS
+SELECT c.nom AS categorie,
+       COUNT(p.id) AS nb_references,
+       COALESCE(SUM(p.stock), 0) AS total_stock
+FROM categorie c
+LEFT JOIN produit p ON p.categorie_id = c.id
+GROUP BY c.id, c.nom;
+```
+Résultat : Informatique 3 / 14, Papeterie 2 / 30, Mobilier 0 / 0.
+
+**Pourquoi `COUNT(*)` donnerait 1 pour Mobilier ?** Le `LEFT JOIN` crée une ligne pour Mobilier avec des `NULL` côté `produit`. `COUNT(*)` compte les lignes (1), alors que `COUNT(p.id)` ignore les `NULL` (0). `COALESCE` transforme le `SUM` `NULL` en 0.
+
+## Exercice 9 – Effet d'une modification
+```sql
+UPDATE produit SET stock = 5 WHERE nom = 'Souris';
+
+SELECT * FROM v_produits_disponibles;   -- Souris apparaît
+SELECT * FROM v_produits_en_rupture;    -- Souris a disparu (1 ligne : Stylo)
+
+UPDATE produit SET stock = 0 WHERE nom = 'Souris';
+```
+La Souris apparaît dans **v_produits_disponibles** : une vue ne stocke rien, elle recalcule son résultat à chaque lecture à partir des tables.
+
+## Exercice 10 – Distinguer vue et table
+```sql
+DROP VIEW v_catalogue_public;
+
+SELECT COUNT(*) FROM produit;   -- 5 : les données sont intactes
+
+CREATE VIEW v_catalogue_public AS
+SELECT nom, prix
+FROM produit;
+```
+`DROP VIEW` supprime seulement la définition (la requête enregistrée) ; les tables sources sont conservées.
+
+## Récap express
+- **Vue** = `SELECT` enregistré sous un nom, sans données propres.
+- `CREATE OR REPLACE VIEW` pour modifier ; `DROP VIEW` n'affecte pas les tables.
+- Vue avec `GROUP BY` / `SUM()` = lecture seule.
+- `LEFT JOIN` + `COUNT(col)` + `COALESCE` pour garder les groupes vides.

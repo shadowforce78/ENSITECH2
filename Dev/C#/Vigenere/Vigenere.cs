@@ -1,112 +1,81 @@
 using System;
-using System.Text;
 
-/// <summary>
-/// Chiffrement / déchiffrement de Vigenère.
-/// Cette classe ne fait aucune saisie ni aucun affichage : elle reçoit des données et retourne un résultat.
-/// </summary>
 public class Vigenere
 {
-    private readonly string[] table =
+    // Répète la clé sous le texte (les non-lettres sont gardées telles quelles)
+    public string SuperposeKey(string cle, string texte)
     {
-        "abcdefghijklmnopqrstuvwxyz",
-        "bcdefghijklmnopqrstuvwxyza",
-        "cdefghijklmnopqrstuvwxyzab",
-        "defghijklmnopqrstuvwxyzabc",
-        "efghijklmnopqrstuvwxyzabcd",
-        "fghijklmnopqrstuvwxyzabcde",
-        "ghijklmnopqrstuvwxyzabcdef",
-        "hijklmnopqrstuvwxyzabcdefg",
-        "ijklmnopqrstuvwxyzabcdefgh",
-        "jklmnopqrstuvwxyzabcdefghi",
-        "klmnopqrstuvwxyzabcdefghij",
-        "lmnopqrstuvwxyzabcdefghijk",
-        "mnopqrstuvwxyzabcdefghijkl",
-        "nopqrstuvwxyzabcdefghijklm",
-        "opqrstuvwxyzabcdefghijklmn",
-        "pqrstuvwxyzabcdefghijklmno",
-        "qrstuvwxyzabcdefghijklmnop",
-        "rstuvwxyzabcdefghijklmnopq",
-        "stuvwxyzabcdefghijklmnopqr",
-        "tuvwxyzabcdefghijklmnopqrs",
-        "uvwxyzabcdefghijklmnopqrst",
-        "vwxyzabcdefghijklmnopqrstu",
-        "wxyzabcdefghijklmnopqrstuv",
-        "xyzabcdefghijklmnopqrstuvw",
-        "yzabcdefghijklmnopqrstuvwx",
-        "zabcdefghijklmnopqrstuvwxy",
-    };
+        VerifierCle(cle);
+        string resultat = "";
+        int position = 0; // position dans la clé
 
-    private string cle = "";
-
-    /// <summary>Crée un outil sans clé par défaut (la clé est passée à chaque appel).</summary>
-    public Vigenere()
-    {
-    }
-
-    /// <summary>Crée un outil avec une clé par défaut.</summary>
-    public Vigenere(string cle)
-    {
-        Cle = cle;
-    }
-
-    /// <summary>Clé par défaut, utilisée par les surcharges sans paramètre de clé.</summary>
-    public string Cle
-    {
-        get => cle;
-        set
+        for (int i = 0; i < texte.Length; i++)
         {
-            VerifierCle(value);
-            cle = value;
+            if (char.IsAsciiLetter(texte[i]))
+            {
+                resultat += cle[position % cle.Length];
+                position++;
+            }
+            else
+            {
+                resultat += texte[i];
+            }
         }
+        return resultat;
     }
 
-    // Étape 1 : écrire la clé "à la queue leu leu" sous le texte (elle n'avance que sur les lettres)
-    public string SuperposeKey(string key, string phrase)
+    public string Chiffrer(string texte, string cle)
     {
-        VerifierCle(key);
-        var sb = new StringBuilder();
-        int k = 0;
-        foreach (char c in phrase)
-            sb.Append(char.IsAsciiLetter(c) ? key[k++ % key.Length] : c);
-        return sb.ToString();
+        string cleRepetee = SuperposeKey(cle, texte);
+        string resultat = "";
+
+        for (int i = 0; i < texte.Length; i++)
+        {
+            if (char.IsAsciiLetter(texte[i]))
+            {
+                int lettre = char.ToLower(texte[i]) - 'a';       // 0 à 25
+                int decalage = char.ToLower(cleRepetee[i]) - 'a'; // 0 à 25
+                resultat += (char)('a' + (lettre + decalage) % 26);
+            }
+            else
+            {
+                resultat += texte[i];
+            }
+        }
+        return resultat;
     }
 
-    // Étapes 2-3 : lettre du texte + lettre de la clé = coordonnées, on lit la case de la grille
-    public string Chiffrer(string phrase, string key)
+    public string Dechiffrer(string texte, string cle)
     {
-        string superposed = SuperposeKey(key, phrase);
-        var sb = new StringBuilder();
-        for (int i = 0; i < phrase.Length; i++)
-            sb.Append(char.IsAsciiLetter(phrase[i])
-                ? table[char.ToLower(superposed[i]) - 'a'][char.ToLower(phrase[i]) - 'a']
-                : phrase[i]);
-        return sb.ToString();
+        string cleRepetee = SuperposeKey(cle, texte);
+        string resultat = "";
+
+        for (int i = 0; i < texte.Length; i++)
+        {
+            if (char.IsAsciiLetter(texte[i]))
+            {
+                int lettre = char.ToLower(texte[i]) - 'a';
+                int decalage = char.ToLower(cleRepetee[i]) - 'a';
+                resultat += (char)('a' + (lettre - decalage + 26) % 26);
+            }
+            else
+            {
+                resultat += texte[i];
+            }
+        }
+        return resultat;
     }
 
-    // Étape 4 : sens inverse, on prend la ligne de la clé et on cherche la lettre chiffrée
-    public string Dechiffrer(string chiffre, string key)
+    // La clé doit être non vide et contenir seulement des lettres
+    private void VerifierCle(string cle)
     {
-        string superposed = SuperposeKey(key, chiffre);
-        var sb = new StringBuilder();
-        for (int i = 0; i < chiffre.Length; i++)
-            sb.Append(char.IsAsciiLetter(chiffre[i])
-                ? (char)('a' + table[char.ToLower(superposed[i]) - 'a'].IndexOf(char.ToLower(chiffre[i])))
-                : chiffre[i]);
-        return sb.ToString();
-    }
-
-    // Surcharges utilisant la clé stockée dans l'objet
-    public string Chiffrer(string phrase) => Chiffrer(phrase, cle);
-
-    public string Dechiffrer(string chiffre) => Dechiffrer(chiffre, cle);
-
-    private static void VerifierCle(string key)
-    {
-        if (string.IsNullOrEmpty(key))
+        if (string.IsNullOrEmpty(cle))
             throw new ArgumentException("La clé ne doit pas être vide.");
-        foreach (char c in key)
-            if (!char.IsAsciiLetter(c))
+
+        for (int i = 0; i < cle.Length; i++)
+        {
+            if (!char.IsAsciiLetter(cle[i]))
                 throw new ArgumentException("La clé ne doit contenir que des lettres (a-z).");
+        }
     }
 }
