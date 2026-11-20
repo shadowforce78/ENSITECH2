@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6da0766ccff768b2",
+        "id": "9d8426ec2a0adf39",
         "type": "tabs",
         "children": [
           {
-            "id": "16fc247d2d604c10",
+            "id": "79704e2e82a96fa1",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Cyber/Injections SQL et requêtes préparées.pdf"
+                "file": "CEJM/Chap 6/Cas pratique chapitre 6.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Injections SQL et requêtes préparées"
+              "icon": "lucide-file",
+              "title": "Cas pratique chapitre 6"
             }
           }
         ]
@@ -192,8 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,26 +209,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "16fc247d2d604c10",
+  "active": "79704e2e82a96fa1",
   "lastOpenFiles": [
+    "file:/home/saumondeluxe/Desktop/dev/Crackme/writeup.md",
+    "CEJM/Chap 6/Cas pratique chapitre 6.md",
+    "Sans titre.md",
+    "CEJM/Chap 6/lu296185oxil.tmp",
+    "CEJM/Chap 6/Fiche complétée CHAP 6 2ème Année_ENSUP.docx",
+    "CEJM/Chap 6/Fiche complétée CHAP 6 2ème Année_ENSUP.docx.fdmdownload",
+    "CEJM/Chap 6/Cas pratique chapitre 6.pdf",
+    "img/Pasted Image 20261106114911_694.png",
+    "CEJM/Chap 6",
+    "Cyber/Injections SQL et requêtes préparées.pdf",
+    "Dev/C#/Vigenere/Fiche/VersionEtudiant_Fiche d'activité -vigenere.docx",
+    "Dev/C#/Vigenere/Fiche/VersionEtudiant_Fiche d'activité -vigenere.docx.fdmdownload",
+    "Dev/C#/Vigenere/Fiche",
     "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.csproj.FileListAbsolute.txt",
-    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.pdb",
-    "Dev/C#/Vigenere/obj/Debug/net10.0/ref/Vigenere.dll",
-    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.dll",
-    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.runtimeconfig.json",
-    "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.genruntimeconfig.cache",
-    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.deps.json",
-    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere",
-    "Dev/C#/Vigenere/obj/Debug/net10.0/apphost",
-    "Dev/C#/Vigenere/obj/Debug/net10.0/refint/Vigenere.dll",
-    "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.pdb",
     "BDD.md",
-    "Cas pratique chapitre 6.md",
     "CEJM.md",
     "Maths.md",
     "Maths/archi pas le corrigé.png",
     "Excalidraw/Drawing 2026-11-06 11.49.10.excalidraw.md",
-    "Pasted Image 20261106114911_694.png",
     "Maths/Exo.png",
     "img/Pasted Image 20261023154141_552.png",
     "img/Pasted Image 20261023152428_531.png",
@@ -254,7 +256,6 @@
     "Excalidraw/Drawing 2026-10-01 11.48.17.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.04.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.02.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-15 10.00.03.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-15 10.00.01.excalidraw.md"
+    "Excalidraw/Drawing 2026-10-15 10.00.03.excalidraw.md"
   ]
 }
