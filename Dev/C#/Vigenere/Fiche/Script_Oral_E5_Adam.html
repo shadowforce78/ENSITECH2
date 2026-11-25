@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Script Oral E5 — Adam Planque</title>
+    <style>
+        @page { size: A4; margin: 18mm 20mm 20mm 20mm; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; font-size: 11pt; line-height: 1.55; color: #222; padding: 18mm 20mm; }
+        h1 { font-size: 20pt; color: #1a3a6a; border-bottom: 3px solid #1a3a6a; padding-bottom: 6px; margin: 0 0 6px; }
+        .subtitle { font-size: 11pt; color: #555; margin-bottom: 20px; }
+        h2 { font-size: 14pt; color: #1a3a6a; margin: 28px 0 10px; border-left: 4px solid #1a3a6a; padding-left: 10px; }
+        h3 { font-size: 11pt; color: #333; margin: 14px 0 6px; font-style: italic; }
+        hr { border: none; border-top: 1px solid #ccc; margin: 18px 0; }
+        p { margin-bottom: 8px; }
+        .time { display: inline-block; background: #1a3a6a; color: #fff; font-size: 9pt; font-weight: 700; padding: 2px 10px; border-radius: 3px; margin-right: 8px; }
+        .stage-direction { color: #888; font-style: italic; font-size: 10pt; margin: 6px 0 10px; padding-left: 16px; border-left: 2px solid #ddd; }
+        ul { margin: 6px 0 10px 24px; }
+        li { margin-bottom: 5px; }
+        strong { color: #1a3a6a; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0 16px; font-size: 10pt; }
+        th, td { border: 1px solid #aaa; padding: 6px 10px; text-align: left; }
+        th { background: #e8edf5; font-weight: 600; color: #1a3a6a; }
+        .competence-check { color: #2a7d2a; font-weight: bold; }
+        .section-qa { background: #f7f8fb; border: 1px solid #ddd; border-radius: 4px; padding: 14px 18px; margin: 10px 0; }
+        .section-qa h3 { margin-top: 0; font-style: normal; font-weight: 700; }
+        .qa-item { margin-bottom: 6px; }
+        .qa-item .q { font-weight: 600; color: #333; }
+        .qa-item .a { color: #555; }
+        .page-break { page-break-before: always; }
+        @media print { body { padding: 0; } }
+    </style>
+</head>
+<body>
+
+<h1>Script Oral E5</h1>
+<p class="subtitle">Adam Planque — BTS SIO SLAM — ~9 min 30 d'expos&eacute; — Portfolio ouvert en support</p>
+
+<hr>
+
+<!-- INTRO -->
+<h2><span class="time">0:00 &rarr; 0:45</span> Introduction</h2>
+
+<p>Bonjour,</p>
+
+<p>Je suis Adam Planque, &eacute;tudiant en deuxi&egrave;me ann&eacute;e de BTS SIO option SLAM au centre de formation ENSITECH. Je suis en alternance depuis deux ans &agrave; l'&Eacute;cole Nationale Sup&eacute;rieure de Paysage de Versailles, au sein de la Direction des Syst&egrave;mes d'Information.</p>
+
+<p>Aujourd'hui, je vais vous pr&eacute;senter deux r&eacute;alisations professionnelles issues de mon alternance qui illustrent les comp&eacute;tences du bloc 1. La premi&egrave;re concerne le d&eacute;ploiement d'un syst&egrave;me d'affichage dynamique avec Xibo, et la seconde, la mise en place de l'authentification &agrave; deux facteurs sur notre serveur CAS.</p>
+
+<hr>
+
+<!-- PARCOURS -->
+<h2><span class="time">0:45 &rarr; 2:00</span> Parcours</h2>
+
+<p class="stage-direction">Montrer la page d'accueil du portfolio, section &laquo;&nbsp;&Agrave; propos&nbsp;&raquo; / &laquo;&nbsp;Parcours&nbsp;&raquo;</p>
+
+<p>La DSI de l'ENSP, c'est une petite &eacute;quipe. On g&egrave;re l'ensemble du syst&egrave;me d'information de l'&eacute;cole&nbsp;: le r&eacute;seau, le parc informatique, les serveurs, et le support aux utilisateurs — aussi bien les enseignants que le personnel administratif et les &eacute;tudiants.</p>
+
+<p>En deux ans d'alternance, j'ai touch&eacute; &agrave; beaucoup de choses&nbsp;: de l'administration r&eacute;seau, du d&eacute;veloppement, de la gestion de tickets, de la maintenance mat&eacute;rielle. Mes responsabilit&eacute;s ont &eacute;volu&eacute;&nbsp;: au d&eacute;part j'assistais mon coll&egrave;gue sur les t&acirc;ches courantes, et aujourd'hui je g&egrave;re des projets de bout en bout, de l'&eacute;tude du besoin jusqu'&agrave; la formation des utilisateurs.</p>
+
+<p>Les deux r&eacute;alisations que je vais vous pr&eacute;senter sont repr&eacute;sentatives de cette mont&eacute;e en comp&eacute;tences.</p>
+
+<hr>
+
+<!-- REAL 1 -->
+<h2><span class="time">2:00 &rarr; 5:30</span> R&eacute;alisation 1 — Xibo&nbsp;: affichage dynamique</h2>
+
+<h3>Le besoin</h3>
+<p>Mon responsable &agrave; la DSI m'a sollicit&eacute; parce que l'&eacute;cole utilisait de vieux diaporamas PowerPoint affich&eacute;s en boucle sur des &eacute;crans dans les couloirs. C'&eacute;tait rigide&nbsp;: chaque modification n&eacute;cessitait d'aller physiquement brancher une cl&eacute; USB sur chaque &eacute;cran. Le service communication souhaitait pouvoir mettre &agrave; jour les contenus &agrave; distance et de mani&egrave;re autonome, sans passer par la DSI &agrave; chaque fois.</p>
+
+<p>Le besoin &eacute;tait donc clair&nbsp;: mettre en place un syst&egrave;me d'affichage dynamique centralis&eacute;, que le service communication puisse piloter lui-m&ecirc;me.</p>
+
+<h3>Mon r&ocirc;le</h3>
+<p>J'ai pris en charge le projet seul, de A &agrave; Z. Mon responsable m'a donn&eacute; la direction, mais c'est moi qui ai fait l'&eacute;tude des solutions, l'installation, la configuration et la formation.</p>
+
+<h3>Ma d&eacute;marche</h3>
+<p>J'ai d'abord fait des recherches sur les solutions open source d'affichage dynamique. J'ai retenu <strong>Xibo</strong> parce qu'il est gratuit, bien document&eacute;, et qu'il propose une interface web intuitive — ce qui &eacute;tait essentiel puisque les utilisateurs finaux n'ont pas de profil technique.</p>
+
+<p>C&ocirc;t&eacute; technique, j'ai d&eacute;ploy&eacute; Xibo en <strong>conteneurs Docker sur un serveur Linux</strong>. &Ccedil;a m'a permis d'avoir une installation propre, facile &agrave; maintenir et &agrave; sauvegarder. J'ai configur&eacute; le serveur CMS Xibo, puis j'ai install&eacute; le client player sur les &eacute;crans.</p>
+
+<p>Une difficult&eacute; que j'ai rencontr&eacute;e&nbsp;: la communication entre le serveur et les players passait par le r&eacute;seau de l'&eacute;cole, et il a fallu v&eacute;rifier que les flux &eacute;taient correctement ouverts, notamment pour la synchronisation des contenus. J'ai fait des tests avec un premier &eacute;cran avant de d&eacute;ployer sur les trois.</p>
+
+<h3>Le r&eacute;sultat</h3>
+<p class="stage-direction">Montrer &eacute;ventuellement une capture de Xibo ou la section projets du portfolio</p>
+
+<p>Aujourd'hui, le syst&egrave;me fonctionne sur <strong>3 &eacute;crans</strong>, avec d'autres pr&eacute;vus. Le service communication g&egrave;re ses contenus de mani&egrave;re totalement autonome.</p>
+
+<p>Pour assurer cette autonomie, j'ai r&eacute;dig&eacute; une <strong>documentation compl&egrave;te sous Word</strong>&nbsp;: guide d'utilisation pas &agrave; pas avec captures d'&eacute;cran, et je suis all&eacute; pr&eacute;senter l'outil en direct au service communication pour les former.</p>
+
+<h3>Comp&eacute;tences mobilis&eacute;es</h3>
+<ul>
+    <li><strong>R&eacute;pondre aux incidents et aux demandes</strong>&nbsp;: j'ai r&eacute;pondu &agrave; une demande d'&eacute;volution formul&eacute;e par mon responsable.</li>
+    <li><strong>Mettre &agrave; disposition un service informatique</strong>&nbsp;: j'ai install&eacute;, test&eacute; et d&eacute;ploy&eacute; Xibo, puis form&eacute; les utilisateurs.</li>
+    <li><strong>Travailler en mode projet</strong>&nbsp;: j'ai d&eacute;coup&eacute; le travail en phases (&eacute;tude, installation, config, tests, formation).</li>
+    <li><strong>G&eacute;rer le patrimoine informatique</strong>&nbsp;: j'ai int&eacute;gr&eacute; de nouveaux &eacute;quipements dans le SI de l'&eacute;cole.</li>
+</ul>
+
+<hr>
+
+<!-- REAL 2 -->
+<div class="page-break"></div>
+<h2><span class="time">5:30 &rarr; 8:30</span> R&eacute;alisation 2 — A2F sur le CAS avec YubiKey</h2>
+
+<h3>Le besoin</h3>
+<p>L'ENSP utilise un serveur <strong>CAS Apereo</strong> personnalis&eacute; pour l'authentification centralis&eacute;e de ses services web. Jusqu'&agrave; pr&eacute;sent, l'acc&egrave;s reposait uniquement sur un couple identifiant/mot de passe. Dans un contexte o&ugrave; les cyberattaques contre les &eacute;tablissements publics se multiplient, mon responsable a souhait&eacute; renforcer la s&eacute;curit&eacute; en ajoutant une <strong>authentification &agrave; deux facteurs</strong>.</p>
+
+<p>L'objectif&nbsp;: que les utilisateurs, en plus de leur mot de passe, doivent s'identifier avec une <strong>cl&eacute; physique YubiKey</strong> utilisant le protocole OTP.</p>
+
+<h3>Mon r&ocirc;le</h3>
+<p>C'est un projet que je m&egrave;ne. Mon responsable a d&eacute;fini le besoin et valid&eacute; le choix des YubiKey, mais c'est moi qui r&eacute;alise l'int&eacute;gration technique sur le CAS.</p>
+
+<h3>Ma d&eacute;marche</h3>
+<p>J'ai commenc&eacute; par &eacute;tudier le fonctionnement du CAS Apereo et son syst&egrave;me de modules d'authentification. J'ai ensuite &eacute;tudi&eacute; le protocole OTP des YubiKey et comment l'int&eacute;grer comme second facteur dans le flux d'authentification du CAS.</p>
+
+<p>Pour ne pas impacter l'environnement de production, j'ai mis en place un <strong>site de test</strong> d&eacute;di&eacute;, connect&eacute; au CAS, qui me permet de valider le fonctionnement de l'A2F sans risque pour les utilisateurs.</p>
+
+<p>J'en suis actuellement &agrave; la <strong>phase de test</strong>&nbsp;: l'authentification par YubiKey fonctionne sur mon environnement de test, mais je n'ai pas encore pu passer en production. C'est un projet en cours.</p>
+
+<h3>Le r&eacute;sultat</h3>
+<p class="stage-direction">Montrer la section parcours ou s&eacute;curit&eacute; du portfolio si pertinent</p>
+
+<p>M&ecirc;me si le d&eacute;ploiement en production n'est pas termin&eacute;, j'ai d&eacute;j&agrave; des r&eacute;sultats concrets&nbsp;:</p>
+<ul>
+    <li>Le module OTP est int&eacute;gr&eacute; au CAS de test.</li>
+    <li>L'authentification &agrave; deux facteurs fonctionne avec les cl&eacute;s YubiKey sur le site de test.</li>
+    <li>La prochaine &eacute;tape sera le d&eacute;ploiement progressif aupr&egrave;s des utilisateurs, en commen&ccedil;ant par la DSI.</li>
+</ul>
+
+<h3>Comp&eacute;tences mobilis&eacute;es</h3>
+<ul>
+    <li><strong>G&eacute;rer le patrimoine informatique</strong>&nbsp;: j'interviens sur une brique centrale du SI — le serveur d'authentification.</li>
+    <li><strong>Mettre &agrave; disposition un service informatique</strong>&nbsp;: je pr&eacute;pare un service de s&eacute;curit&eacute; renforc&eacute;e avec une phase de test rigoureuse.</li>
+    <li><strong>Travailler en mode projet</strong>&nbsp;: j'ai structur&eacute; le travail en phases (&eacute;tude, int&eacute;gration, tests, d&eacute;ploiement pr&eacute;vu).</li>
+    <li><strong>D&eacute;velopper la pr&eacute;sence en ligne</strong>&nbsp;: en s&eacute;curisant l'authentification des services web de l'&eacute;cole.</li>
+</ul>
+
+<hr>
+
+<!-- SYNTHESE -->
+<h2><span class="time">8:30 &rarr; 9:30</span> Synth&egrave;se et bilan</h2>
+
+<p class="stage-direction">Montrer le portfolio en page d'accueil</p>
+
+<p>Pour r&eacute;sumer la couverture des six comp&eacute;tences du bloc 1&nbsp;:</p>
+
+<table>
+    <tr>
+        <th>Comp&eacute;tence</th>
+        <th>Xibo</th>
+        <th>A2F/CAS</th>
+    </tr>
+    <tr><td>G&eacute;rer le patrimoine informatique</td><td class="competence-check">&check;</td><td class="competence-check">&check;</td></tr>
+    <tr><td>R&eacute;pondre aux incidents et demandes</td><td class="competence-check">&check;</td><td></td></tr>
+    <tr><td>D&eacute;velopper la pr&eacute;sence en ligne</td><td></td><td class="competence-check">&check;</td></tr>
+    <tr><td>Travailler en mode projet</td><td class="competence-check">&check;</td><td class="competence-check">&check;</td></tr>
+    <tr><td>Mettre &agrave; disposition un service</td><td class="competence-check">&check;</td><td class="competence-check">&check;</td></tr>
+    <tr><td>Organiser son d&eacute;veloppement professionnel</td><td class="competence-check">&check;</td><td class="competence-check">&check;</td></tr>
+</table>
+
+<p>Pour la comp&eacute;tence <strong>&laquo;&nbsp;Organiser son d&eacute;veloppement professionnel&nbsp;&raquo;</strong>&nbsp;: sur chacun de ces deux projets, j'ai d&ucirc; me former en autonomie sur des technologies que je ne connaissais pas — Docker et Xibo d'un c&ocirc;t&eacute;, le protocole OTP et la configuration avanc&eacute;e de CAS Apereo de l'autre. Je fais de la veille r&eacute;guli&egrave;re, notamment via GitHub et des documentations officielles, ce qui m'a permis de monter en comp&eacute;tences rapidement.</p>
+
+<p>Ce que ces deux ann&eacute;es d'alternance m'ont appris, et qui a chang&eacute; ma fa&ccedil;on de travailler, c'est l'importance de <strong>tester dans un environnement isol&eacute; avant de toucher &agrave; la production</strong>, et de <strong>documenter et former</strong> pour que le service survive apr&egrave;s mon intervention.</p>
+
+<p><strong>Merci, je suis disponible pour vos questions.</strong></p>
+
+<!-- AIDE-MEMOIRE -->
+<div class="page-break"></div>
+<h2>Aide-m&eacute;moire — Questions probables du jury</h2>
+
+<div class="section-qa">
+    <h3>Sur Xibo</h3>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;Pourquoi Docker et pas une installation classique&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; Isolation, facilit&eacute; de sauvegarde et de mise &agrave; jour, reproductibilit&eacute;.</span></div>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;Comment vous avez form&eacute; les utilisateurs&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; Doc Word compl&egrave;te + pr&eacute;sentation en direct au service comm.</span></div>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;Et si le serveur tombe&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; Les players ont un cache local, ils continuent d'afficher les derniers contenus.</span></div>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;3 &eacute;crans c'est peu, non&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; D&eacute;ploiement progressif, d'autres sont pr&eacute;vus. Le syst&egrave;me est dimensionn&eacute; pour en supporter bien plus.</span></div>
+</div>
+
+<div class="section-qa">
+    <h3>Sur l'A2F</h3>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;Pourquoi YubiKey et pas une appli TOTP&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; Cl&eacute; physique = pas de d&eacute;pendance au t&eacute;l&eacute;phone perso, plus adapt&eacute; en milieu professionnel, r&eacute;sistant au phishing.</span></div>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;C'est pas fini, comment on &eacute;value&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; La d&eacute;marche est compl&egrave;te&nbsp;: &eacute;tude, choix, int&eacute;gration, tests. Le passage en prod est une question de planning, pas de comp&eacute;tence.</span></div>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;Qu'est-ce que CAS Apereo&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; Serveur d'authentification centralis&eacute;e open source (Central Authentication Service), utilis&eacute; par beaucoup d'universit&eacute;s et &eacute;tablissements publics.</span></div>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;Comment vous avez test&eacute;&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; Site d&eacute;di&eacute; connect&eacute; au CAS, qui permet de valider l'A2F sans impacter les utilisateurs en production.</span></div>
+</div>
+
+<div class="section-qa">
+    <h3>Questions transversales</h3>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;Votre veille techno, concr&egrave;tement&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; Documentation officielle Xibo/Apereo, GitHub, forums communautaires. J'applique directement ce que j'apprends dans mes projets.</span></div>
+    <div class="qa-item"><span class="q">&laquo;&nbsp;Votre plus grosse difficult&eacute;&nbsp;?&nbsp;&raquo;</span><br><span class="a">&rarr; Sur Xibo, la partie r&eacute;seau (flux entre serveur et players). Sur l'A2F, comprendre le fonctionnement interne du CAS pour y greffer un module.</span></div>
+</div>
+
+</body>
+</html>

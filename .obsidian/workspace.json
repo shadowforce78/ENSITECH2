@@ -11,14 +11,14 @@
             "id": "79704e2e82a96fa1",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "conflict-files-obsidian-git.md",
-                "bFile": "conflict-files-obsidian-git.md",
-                "aRef": ""
+                "file": "Dev/C#/Vigenere/Fiche/Script_Oral_E5_Adam.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: conflict-files-obsidian-git  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Script_Oral_E5_Adam"
             }
           }
         ]
@@ -209,27 +209,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41ec20f0f83a5241",
+  "active": "a0c40acb3d569247",
   "lastOpenFiles": [
+    "Dev/C#/Vigenere/Fiche/Script_Oral_E5_Adam.pdf",
+    "Dev/C#/Vigenere/Fiche/Fiche_activite_Vigenere_AdamPlanque.pdf",
+    "Dev/C#/Vigenere/Fiche/Script_Oral_E5_Adam.html",
+    "BTS/tableau synthese.xlsx",
+    "BTS/tableau syntehse.xlsx",
     "BTS/8 - EPREUVE ORALE E5 - MODELE DE TABLEAU DE SYNTHESE ANNEXE VI-1 - BTS SIO 2026.xlsx",
     "BTS",
-    "8 - EPREUVE ORALE E5 - MODELE DE TABLEAU DE SYNTHESE ANNEXE VI-1 - BTS SIO 2026.xlsx",
-    "conflict-files-obsidian-git.md",
-    "Maths.md",
     "CEJM/Chap 6/Cas pratique chapitre 6.md",
+    "Dev/C#/Vigenere/Fiche/Script_Oral_E5_Adam.md",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.csproj.FileListAbsolute.txt",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.pdb",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/ref/Vigenere.dll",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.dll",
     "file:/home/saumondeluxe/Desktop/dev/Crackme/writeup.md",
     "Sans titre.md",
-    "CEJM/Chap 6/lu296185oxil.tmp",
-    "CEJM/Chap 6/Fiche complétée CHAP 6 2ème Année_ENSUP.docx",
-    "CEJM/Chap 6/Fiche complétée CHAP 6 2ème Année_ENSUP.docx.fdmdownload",
-    "CEJM/Chap 6/Cas pratique chapitre 6.pdf",
     "img/Pasted Image 20261106114911_694.png",
-    "CEJM/Chap 6",
-    "Cyber/Injections SQL et requêtes préparées.pdf",
-    "Dev/C#/Vigenere/Fiche/VersionEtudiant_Fiche d'activité -vigenere.docx",
-    "Dev/C#/Vigenere/Fiche/VersionEtudiant_Fiche d'activité -vigenere.docx.fdmdownload",
     "BDD.md",
     "CEJM.md",
+    "Maths.md",
     "Maths/archi pas le corrigé.png",
     "Excalidraw/Drawing 2026-11-06 11.49.10.excalidraw.md",
     "Maths/Exo.png",
