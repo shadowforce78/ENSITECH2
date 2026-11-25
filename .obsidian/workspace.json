@@ -209,8 +209,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "79704e2e82a96fa1",
+  "active": "41ec20f0f83a5241",
   "lastOpenFiles": [
+    "BTS/8 - EPREUVE ORALE E5 - MODELE DE TABLEAU DE SYNTHESE ANNEXE VI-1 - BTS SIO 2026.xlsx",
+    "BTS",
+    "8 - EPREUVE ORALE E5 - MODELE DE TABLEAU DE SYNTHESE ANNEXE VI-1 - BTS SIO 2026.xlsx",
     "conflict-files-obsidian-git.md",
     "Maths.md",
     "CEJM/Chap 6/Cas pratique chapitre 6.md",
@@ -225,8 +228,6 @@
     "Cyber/Injections SQL et requêtes préparées.pdf",
     "Dev/C#/Vigenere/Fiche/VersionEtudiant_Fiche d'activité -vigenere.docx",
     "Dev/C#/Vigenere/Fiche/VersionEtudiant_Fiche d'activité -vigenere.docx.fdmdownload",
-    "Dev/C#/Vigenere/Fiche",
-    "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.csproj.FileListAbsolute.txt",
     "BDD.md",
     "CEJM.md",
     "Maths/archi pas le corrigé.png",
@@ -255,7 +256,6 @@
     "Excalidraw/Drawing 2026-09-11 17.27.51.excalidraw.md",
     "Cybersécurité.md",
     "Excalidraw/Drawing 2026-10-01 11.48.17.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-15 10.00.04.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-15 10.00.02.excalidraw.md"
+    "Excalidraw/Drawing 2026-10-15 10.00.04.excalidraw.md"
   ]
 }
