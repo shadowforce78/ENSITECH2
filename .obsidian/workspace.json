@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CEJM/Chap 6/Cas pratique chapitre 6.md",
+                "file": "Dev/C#/Vigenere/Fiche/Script_Oral_E5_Adam.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cas pratique chapitre 6"
+              "title": "Script_Oral_E5_Adam"
             }
           }
         ]
@@ -211,20 +211,21 @@
   },
   "active": "79704e2e82a96fa1",
   "lastOpenFiles": [
-    "file:/home/saumondeluxe/Desktop/dev/Crackme/writeup.md",
     "CEJM/Chap 6/Cas pratique chapitre 6.md",
-    "Sans titre.md",
-    "CEJM/Chap 6/lu296185oxil.tmp",
-    "CEJM/Chap 6/Fiche complétée CHAP 6 2ème Année_ENSUP.docx",
-    "CEJM/Chap 6/Fiche complétée CHAP 6 2ème Année_ENSUP.docx.fdmdownload",
-    "CEJM/Chap 6/Cas pratique chapitre 6.pdf",
-    "img/Pasted Image 20261106114911_694.png",
-    "CEJM/Chap 6",
-    "Cyber/Injections SQL et requêtes préparées.pdf",
-    "Dev/C#/Vigenere/Fiche/VersionEtudiant_Fiche d'activité -vigenere.docx",
-    "Dev/C#/Vigenere/Fiche/VersionEtudiant_Fiche d'activité -vigenere.docx.fdmdownload",
-    "Dev/C#/Vigenere/Fiche",
+    "Dev/C#/Vigenere/Fiche/Script_Oral_E5_Adam.md",
     "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.csproj.FileListAbsolute.txt",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.pdb",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/ref/Vigenere.dll",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.dll",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.runtimeconfig.json",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/Vigenere.genruntimeconfig.cache",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.deps.json",
+    "Dev/C#/Vigenere/bin/Debug/net10.0/Vigenere.exe",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/apphost.exe",
+    "Dev/C#/Vigenere/obj/Debug/net10.0/refint/Vigenere.dll",
+    "file:/home/saumondeluxe/Desktop/dev/Crackme/writeup.md",
+    "Sans titre.md",
+    "img/Pasted Image 20261106114911_694.png",
     "BDD.md",
     "CEJM.md",
     "Maths.md",
@@ -255,7 +256,6 @@
     "Cybersécurité.md",
     "Excalidraw/Drawing 2026-10-01 11.48.17.excalidraw.md",
     "Excalidraw/Drawing 2026-10-15 10.00.04.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-15 10.00.02.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-15 10.00.03.excalidraw.md"
+    "Excalidraw/Drawing 2026-10-15 10.00.02.excalidraw.md"
   ]
 }

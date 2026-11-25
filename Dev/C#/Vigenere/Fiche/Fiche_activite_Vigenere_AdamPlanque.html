@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche d'activit&eacute; - Vigen&egrave;re - Adam Planque</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 20mm 25mm 20mm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #222;
+            background: #fff;
+            padding: 20mm;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        /* -- HEADER / COVER -- */
+        .cover {
+            text-align: center;
+            padding: 40px 0 30px;
+            border-bottom: 3px solid #2a4d8f;
+            margin-bottom: 30px;
+        }
+
+        .cover .org-name {
+            font-size: 22pt;
+            font-weight: 700;
+            color: #2a4d8f;
+            margin-bottom: 4px;
+        }
+
+        .cover .org-sub {
+            font-size: 10pt;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .cover .doc-title {
+            font-size: 28pt;
+            font-weight: 300;
+            color: #2a4d8f;
+            margin-bottom: 8px;
+        }
+
+        .cover .doc-subtitle {
+            font-size: 18pt;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .cover-table {
+            width: 70%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .cover-table td {
+            border: 1px solid #aaa;
+            padding: 8px 14px;
+            font-size: 10pt;
+        }
+
+        .cover-table td:first-child {
+            font-weight: 600;
+            background: #f0f4fa;
+            width: 130px;
+        }
+
+        /* -- SECTION HEADERS -- */
+        h1 {
+            font-size: 16pt;
+            color: #2a4d8f;
+            border-bottom: 2px solid #2a4d8f;
+            padding-bottom: 4px;
+            margin: 30px 0 16px;
+        }
+
+        h2 {
+            font-size: 13pt;
+            color: #2a4d8f;
+            margin: 22px 0 10px;
+        }
+
+        h3 {
+            font-size: 11pt;
+            color: #333;
+            margin: 14px 0 6px;
+        }
+
+        /* -- INFO BOX -- */
+        .info-box {
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            padding: 14px 18px;
+            margin: 10px 0 18px;
+            background: #fafbfd;
+        }
+
+        .info-box p {
+            margin-bottom: 6px;
+        }
+
+        .info-box strong {
+            color: #333;
+        }
+
+        /* -- GENERIC TABLE -- */
+        table.data {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 18px;
+            font-size: 10pt;
+        }
+
+        table.data th,
+        table.data td {
+            border: 1px solid #aaa;
+            padding: 7px 10px;
+            text-align: left;
+        }
+
+        table.data th {
+            background: #e8edf5;
+            font-weight: 600;
+            color: #2a4d8f;
+        }
+
+        /* -- CHECKBOX -- */
+        .checkbox {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 1.5px solid #555;
+            border-radius: 2px;
+            vertical-align: middle;
+            margin-right: 6px;
+            position: relative;
+            top: -1px;
+        }
+
+        .checkbox.checked::after {
+            content: '\2715';
+            position: absolute;
+            top: -3px;
+            left: 1px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #2a4d8f;
+        }
+
+        /* -- CODE BLOCKS -- */
+        pre {
+            background: #f4f5f7;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 12px 16px;
+            font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+            font-size: 9pt;
+            line-height: 1.45;
+            overflow-x: auto;
+            margin: 10px 0 16px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        pre .kw { color: #0000ff; }
+        pre .type { color: #2b91af; }
+        pre .str { color: #a31515; }
+        pre .cmt { color: #008000; }
+
+        /* -- LISTS -- */
+        ul, ol {
+            margin: 6px 0 10px 24px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        /* -- FOOTER -- */
+        .footer {
+            text-align: center;
+            font-size: 8pt;
+            color: #888;
+            border-top: 1px solid #ccc;
+            padding-top: 8px;
+            margin-top: 40px;
+        }
+
+        .toc a {
+            color: #2a4d8f;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 6px;
+        }
+
+        .toc .sub {
+            margin-left: 24px;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- PAGE DE GARDE                                                 -->
+<!-- ============================================================ -->
+<div class="cover">
+    <div class="org-name">ENSP &mdash; &Eacute;cole Nationale Sup&eacute;rieure de Paysage</div>
+    <div class="org-sub">Direction des Syst&egrave;mes d'Information &bull; Versailles</div>
+
+    <div style="height: 60px;"></div>
+
+    <div class="doc-title">Fiche d'activit&eacute;</div>
+    <div class="doc-subtitle">Vigen&egrave;re</div>
+
+    <div style="height: 40px;"></div>
+
+    <table class="cover-table">
+        <tr>
+            <td>R&eacute;dig&eacute; par</td>
+            <td>PLANQUE Adam</td>
+            <td>Alternant &mdash; DSI</td>
+        </tr>
+    </table>
+</div>
+
+<!-- ============================================================ -->
+<!-- HISTORIQUE                                                    -->
+<!-- ============================================================ -->
+<div class="page-break"></div>
+<h1>Historique des &eacute;volutions</h1>
+
+<table class="data">
+    <tr>
+        <th>Indice</th>
+        <th>Date</th>
+        <th>Modifications</th>
+        <th>R&eacute;dacteur</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>25/11/2026</td>
+        <td>Premi&egrave;re version</td>
+        <td>PLANQUE Adam</td>
+    </tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- SOMMAIRE                                                      -->
+<!-- ============================================================ -->
+<div class="page-break"></div>
+<h1>Sommaire</h1>
+
+<div class="toc">
+    <ul>
+        <li><strong>1.</strong> <a href="#section1">Description d'une r&eacute;alisation professionnelle</a>
+            <ul class="sub">
+                <li>1.1. <a href="#s11">Comp&eacute;tences travaill&eacute;es</a></li>
+                <li>1.2. <a href="#s12">Conditions de r&eacute;alisation</a></li>
+                <li>1.3. <a href="#s13">Ressources documentaires, mat&eacute;rielles et logicielles</a></li>
+                <li>1.4. <a href="#s14">Modalit&eacute;s d'acc&egrave;s aux productions</a></li>
+                <li>1.5. <a href="#s15">Descriptif de la r&eacute;alisation professionnelle</a></li>
+            </ul>
+        </li>
+        <li><strong>2.</strong> <a href="#acronymes">Acronymes</a></li>
+        <li><strong>3.</strong> <a href="#annexe">Annexe</a></li>
+    </ul>
+</div>
+
+<!-- ============================================================ -->
+<!-- 1. DESCRIPTION                                                -->
+<!-- ============================================================ -->
+<div class="page-break"></div>
+<h1 id="section1">1. Description d'une r&eacute;alisation professionnelle</h1>
+
+<table class="data">
+    <tr>
+        <td style="font-weight:600; background:#f0f4fa;">Nom, pr&eacute;nom</td>
+        <td>PLANQUE, Adam</td>
+        <td style="font-weight:600; background:#f0f4fa;">N&deg; candidat</td>
+        <td>...............................</td>
+    </tr>
+</table>
+
+<table class="data">
+    <tr>
+        <td>
+            <span class="checkbox checked"></span> &Eacute;preuve ponctuelle
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="checkbox"></span> Contr&ocirc;le en cours de formation
+        </td>
+        <td>Date : ...... / ...... / ..........</td>
+    </tr>
+</table>
+
+<div class="info-box">
+    <p><strong>Organisation support de la r&eacute;alisation professionnelle :</strong> ENSP &mdash; &Eacute;cole Nationale Sup&eacute;rieure de Paysage (Versailles) &mdash; Direction des Syst&egrave;mes d'Information</p>
+    <p><strong>Intitul&eacute; de la r&eacute;alisation professionnelle :</strong> Chiffrement et d&eacute;chiffrement d'un message avec le chiffre de Vigen&egrave;re</p>
+    <p><strong>P&eacute;riode de r&eacute;alisation :</strong> Novembre 2025 &nbsp;&nbsp;&nbsp; <strong>Lieu :</strong> En formation (ENSITECH)</p>
+    <p><strong>Modalit&eacute; :</strong> <span class="checkbox checked"></span> Seul(e) &nbsp;&nbsp; <span class="checkbox"></span> En &eacute;quipe</p>
+</div>
+
+<!-- 1.1 -->
+<h2 id="s11">1.1. Comp&eacute;tences travaill&eacute;es</h2>
+
+<p>
+    <span class="checkbox checked"></span> Concevoir et d&eacute;velopper une solution applicative<br>
+    <span class="checkbox checked"></span> Assurer la maintenance corrective ou &eacute;volutive d'une solution applicative<br>
+    <span class="checkbox"></span> G&eacute;rer les donn&eacute;es
+</p>
+
+<!-- 1.2 -->
+<h2 id="s12">1.2. Conditions de r&eacute;alisation (ressources fournies, r&eacute;sultats attendus)</h2>
+
+<div class="info-box">
+    <h3>Ressources fournies :</h3>
+    <ul>
+        <li><strong>Documentation :</strong> Un sujet de TD intitul&eacute; &laquo;&nbsp;Transformer votre programme de Vigen&egrave;re en classe&nbsp;&raquo;, fourni par le formateur, pr&eacute;sentant le principe du chiffre de Vigen&egrave;re et l'organisation cible en deux fichiers.</li>
+        <li><strong>Exemples :</strong> Un exemple concret de message clair (&laquo;&nbsp;les gaulois sont dans la plaine&nbsp;&raquo;) associ&eacute; &agrave; une cl&eacute; (&laquo;&nbsp;cogito&nbsp;&raquo;) et son r&eacute;sultat chiffr&eacute; pour v&eacute;rifier la coh&eacute;rence du code.</li>
+        <li><strong>Sp&eacute;cifications techniques :</strong> La liste des m&eacute;thodes &agrave; impl&eacute;menter dans la classe Vigen&egrave;re (constructeurs, m&eacute;thodes de chiffrement/d&eacute;chiffrement, validation de la cl&eacute;).</li>
+        <li><strong>Aide :</strong> Des extraits de code C# sur les conversions entre caract&egrave;res et codes ASCII, et l'arithm&eacute;tique modulaire.</li>
+    </ul>
+
+    <h3 style="margin-top: 14px;">R&eacute;sultats attendus :</h3>
+    <ul>
+        <li>Cr&eacute;ation d'une <strong>classe Vigenere</strong> dans un fichier d&eacute;di&eacute; (<code>Vigenere.cs</code>), s&eacute;par&eacute;e du programme principal.</li>
+        <li>Impl&eacute;mentation d'une m&eacute;thode <strong>SuperposeKey</strong> qui r&eacute;p&egrave;te la cl&eacute; sous le texte en pr&eacute;servant les caract&egrave;res non-lettres.</li>
+        <li>Impl&eacute;mentation des m&eacute;thodes <strong>Chiffrer</strong> et <strong>Dechiffrer</strong> utilisant l'arithm&eacute;tique modulaire (d&eacute;calage mod 26).</li>
+        <li>Programme console (<code>Program.cs</code>) permettant de saisir un texte et une cl&eacute;, d'afficher la cl&eacute; superpos&eacute;e, le texte chiffr&eacute; puis d&eacute;chiffr&eacute;.</li>
+    </ul>
+</div>
+
+<!-- 1.3 -->
+<h2 id="s13">1.3. Description des ressources documentaires, mat&eacute;rielles et logicielles utilis&eacute;es</h2>
+
+<div class="info-box">
+    <h3>Ressources documentaires :</h3>
+    <ul>
+        <li>Sujet de TD &laquo;&nbsp;Transformer votre programme de Vigen&egrave;re en classe&nbsp;&raquo;, fourni par le formateur.</li>
+        <li>Documentation technique C# : conversions char/int, arithm&eacute;tique modulaire, gestion des exceptions.</li>
+        <li>Cahier des charges implicite : sp&eacute;cifications de la classe Vigenere (m&eacute;thodes publiques, validation de la cl&eacute;).</li>
+    </ul>
+
+    <h3 style="margin-top: 10px;">Ressources mat&eacute;rielles :</h3>
+    <ul>
+        <li>PC personnel sous Windows 11.</li>
+    </ul>
+
+    <h3 style="margin-top: 10px;">Ressources logicielles :</h3>
+    <ul>
+        <li>Environnement de d&eacute;veloppement : <strong>Visual Studio Code</strong>.</li>
+        <li>SDK : <strong>.NET</strong> (projet console C#).</li>
+        <li>Gestion de versions : <strong>Git</strong>.</li>
+    </ul>
+</div>
+
+<!-- 1.4 -->
+<h2 id="s14">1.4. Modalit&eacute;s d'acc&egrave;s aux productions et &agrave; leur documentation</h2>
+
+<div class="info-box">
+    <p><strong>Documentation technique :</strong> Commentaires au sein du code expliquant le r&ocirc;le de chaque m&eacute;thode et les cas de validation (v&eacute;rification de la cl&eacute;, gestion des caract&egrave;res non-lettres).</p>
+    <p><strong>Code source :</strong> Projet .NET Console stock&eacute; dans un d&eacute;p&ocirc;t Git local, organis&eacute; en deux fichiers : <code>Vigenere.cs</code> (classe m&eacute;tier) et <code>Program.cs</code> (interface console).</p>
+</div>
+
+<!-- 1.5 -->
+<h2 id="s15">1.5. Descriptif de la r&eacute;alisation professionnelle, y compris les productions r&eacute;alis&eacute;es et sch&eacute;mas explicatifs</h2>
+
+<h3>Analyse du besoin</h3>
+<p>
+    L'objectif &eacute;tait de concevoir un syst&egrave;me de chiffrement et de d&eacute;chiffrement bas&eacute; sur le <strong>chiffre de Vigen&egrave;re</strong>.
+    Ce chiffrement polyalphab&eacute;tique utilise une cl&eacute; r&eacute;p&eacute;t&eacute;e pour d&eacute;caler chaque lettre du texte clair, ce qui le rend plus r&eacute;sistant
+    que le simple chiffre de C&eacute;sar aux attaques par analyse de fr&eacute;quence.
+</p>
+<p>
+    Le travail demand&eacute; consistait &agrave; <strong>restructurer un programme existant</strong> en s&eacute;parant la logique m&eacute;tier (chiffrement) du programme
+    principal (saisies/affichages), selon les principes de la programmation orient&eacute;e objet.
+</p>
+
+<h3>Architecture du projet</h3>
+<p>Le programme est organis&eacute; en deux fichiers :</p>
+
+<table class="data">
+    <tr>
+        <th>Fichier</th>
+        <th>R&ocirc;le</th>
+    </tr>
+    <tr>
+        <td><code>Program.cs</code></td>
+        <td>Programme principal : saisie du texte et de la cl&eacute;, appel des m&eacute;thodes, affichage des r&eacute;sultats.</td>
+    </tr>
+    <tr>
+        <td><code>Vigenere.cs</code></td>
+        <td>Classe m&eacute;tier : contient toute la logique de chiffrement/d&eacute;chiffrement. Ne fait aucune saisie ni affichage.</td>
+    </tr>
+</table>
+
+<h3>Superposition de la cl&eacute; &mdash; m&eacute;thode <code>SuperposeKey</code></h3>
+<p>
+    La premi&egrave;re &eacute;tape du chiffre de Vigen&egrave;re consiste &agrave; r&eacute;p&eacute;ter la cl&eacute; sous le texte clair. Les caract&egrave;res non-lettres
+    (espaces, ponctuation) sont conserv&eacute;s tels quels et ne consomment pas de position dans la cl&eacute;.
+</p>
+
+<pre><span class="kw">public string</span> SuperposeKey(<span class="kw">string</span> cle, <span class="kw">string</span> texte)
+{
+    VerifierCle(cle);
+    <span class="kw">string</span> resultat = <span class="str">""</span>;
+    <span class="kw">int</span> position = 0;
+
+    <span class="kw">for</span> (<span class="kw">int</span> i = 0; i &lt; texte.Length; i++)
+    {
+        <span class="kw">if</span> (<span class="kw">char</span>.IsAsciiLetter(texte[i]))
+        {
+            resultat += cle[position % cle.Length];
+            position++;
+        }
+        <span class="kw">else</span>
+        {
+            resultat += texte[i];
+        }
+    }
+    <span class="kw">return</span> resultat;
+}</pre>
+
+<p><strong>Exemple :</strong> texte = <code>"les gaulois"</code>, cl&eacute; = <code>"cle"</code></p>
+<table class="data">
+    <tr><th>Texte</th><td>l</td><td>e</td><td>s</td><td>&nbsp;</td><td>g</td><td>a</td><td>u</td><td>l</td><td>o</td><td>i</td><td>s</td></tr>
+    <tr><th>Cl&eacute;</th><td>c</td><td>l</td><td>e</td><td>&nbsp;</td><td>c</td><td>l</td><td>e</td><td>c</td><td>l</td><td>e</td><td>c</td></tr>
+</table>
+
+<h3>Chiffrement &mdash; m&eacute;thode <code>Chiffrer</code></h3>
+<p>
+    Pour chaque lettre, on calcule son rang (0&ndash;25) et celui de la lettre de cl&eacute; correspondante, puis on additionne
+    les deux modulo 26. Les caract&egrave;res non-lettres sont recopi&eacute;s sans modification.
+</p>
+
+<pre><span class="kw">public string</span> Chiffrer(<span class="kw">string</span> texte, <span class="kw">string</span> cle)
+{
+    <span class="kw">string</span> cleRepetee = SuperposeKey(cle, texte);
+    <span class="kw">string</span> resultat = <span class="str">""</span>;
+
+    <span class="kw">for</span> (<span class="kw">int</span> i = 0; i &lt; texte.Length; i++)
+    {
+        <span class="kw">if</span> (<span class="kw">char</span>.IsAsciiLetter(texte[i]))
+        {
+            <span class="kw">int</span> lettre = <span class="kw">char</span>.ToLower(texte[i]) - <span class="str">'a'</span>;
+            <span class="kw">int</span> decalage = <span class="kw">char</span>.ToLower(cleRepetee[i]) - <span class="str">'a'</span>;
+            resultat += (<span class="kw">char</span>)(<span class="str">'a'</span> + (lettre + decalage) % 26);
+        }
+        <span class="kw">else</span>
+        {
+            resultat += texte[i];
+        }
+    }
+    <span class="kw">return</span> resultat;
+}</pre>
+
+<p><strong>Formule :</strong> <code>chiffr&eacute; = (lettre + d&eacute;calage) mod 26</code></p>
+
+<h3>D&eacute;chiffrement &mdash; m&eacute;thode <code>Dechiffrer</code></h3>
+<p>
+    L'op&eacute;ration inverse : on soustrait le rang de la cl&eacute; au rang de la lettre chiffr&eacute;e, en ajoutant 26 avant
+    le modulo pour &eacute;viter les valeurs n&eacute;gatives.
+</p>
+
+<pre><span class="kw">public string</span> Dechiffrer(<span class="kw">string</span> texte, <span class="kw">string</span> cle)
+{
+    <span class="kw">string</span> cleRepetee = SuperposeKey(cle, texte);
+    <span class="kw">string</span> resultat = <span class="str">""</span>;
+
+    <span class="kw">for</span> (<span class="kw">int</span> i = 0; i &lt; texte.Length; i++)
+    {
+        <span class="kw">if</span> (<span class="kw">char</span>.IsAsciiLetter(texte[i]))
+        {
+            <span class="kw">int</span> lettre = <span class="kw">char</span>.ToLower(texte[i]) - <span class="str">'a'</span>;
+            <span class="kw">int</span> decalage = <span class="kw">char</span>.ToLower(cleRepetee[i]) - <span class="str">'a'</span>;
+            resultat += (<span class="kw">char</span>)(<span class="str">'a'</span> + (lettre - decalage + 26) % 26);
+        }
+        <span class="kw">else</span>
+        {
+            resultat += texte[i];
+        }
+    }
+    <span class="kw">return</span> resultat;
+}</pre>
+
+<p><strong>Formule :</strong> <code>clair = (lettre - d&eacute;calage + 26) mod 26</code></p>
+
+<h3>Validation de la cl&eacute; &mdash; m&eacute;thode <code>VerifierCle</code></h3>
+<p>
+    Une m&eacute;thode priv&eacute;e v&eacute;rifie que la cl&eacute; n'est pas vide et ne contient que des lettres ASCII. En cas d'erreur,
+    une <code>ArgumentException</code> est lev&eacute;e, intercept&eacute;e dans <code>Program.cs</code> par un bloc <code>try/catch</code>.
+</p>
+
+<pre><span class="kw">private void</span> VerifierCle(<span class="kw">string</span> cle)
+{
+    <span class="kw">if</span> (<span class="kw">string</span>.IsNullOrEmpty(cle))
+        <span class="kw">throw new</span> <span class="type">ArgumentException</span>(<span class="str">"La cl&eacute; ne doit pas &ecirc;tre vide."</span>);
+
+    <span class="kw">for</span> (<span class="kw">int</span> i = 0; i &lt; cle.Length; i++)
+    {
+        <span class="kw">if</span> (!<span class="kw">char</span>.IsAsciiLetter(cle[i]))
+            <span class="kw">throw new</span> <span class="type">ArgumentException</span>(<span class="str">"La cl&eacute; ne doit contenir que des lettres (a-z)."</span>);
+    }
+}</pre>
+
+<h3>Programme principal &mdash; <code>Program.cs</code></h3>
+<p>
+    Le programme cr&eacute;e un objet <code>Vigenere</code>, demande &agrave; l'utilisateur un texte et une cl&eacute;, puis affiche
+    la cl&eacute; superpos&eacute;e, le texte chiffr&eacute; et le texte d&eacute;chiffr&eacute; (v&eacute;rification aller-retour). La gestion d'erreurs
+    est assur&eacute;e par un <code>try/catch</code> sur <code>ArgumentException</code>.
+</p>
+
+<pre><span class="type">Vigenere</span> outil = <span class="kw">new</span> <span class="type">Vigenere</span>();
+
+Console.Write(<span class="str">"Texte &agrave; chiffrer : "</span>);
+<span class="kw">string</span> texte = Console.ReadLine() ?? <span class="str">""</span>;
+
+Console.Write(<span class="str">"Cl&eacute; : "</span>);
+<span class="kw">string</span> cle = Console.ReadLine() ?? <span class="str">""</span>;
+
+<span class="kw">try</span>
+{
+    <span class="kw">string</span> texteChiffre = outil.Chiffrer(texte, cle);
+    Console.WriteLine(<span class="str">"Cl&eacute; superpos&eacute;e : "</span> + outil.SuperposeKey(cle, texte));
+    Console.WriteLine(<span class="str">"Texte chiffr&eacute; : "</span> + texteChiffre);
+
+    <span class="kw">string</span> texteDechiffre = outil.Dechiffrer(texteChiffre, cle);
+    Console.WriteLine(<span class="str">"Texte d&eacute;chiffr&eacute; : "</span> + texteDechiffre);
+}
+<span class="kw">catch</span> (<span class="type">ArgumentException</span> e)
+{
+    Console.WriteLine(<span class="str">"Erreur : "</span> + e.Message);
+}</pre>
+
+<h3>Bilan</h3>
+<p>
+    Le programme est pleinement fonctionnel : il chiffre et d&eacute;chiffre correctement un message avec le chiffre de Vigen&egrave;re.
+    L'approche par <strong>arithm&eacute;tique modulaire</strong> (addition/soustraction de rangs mod 26) est plus l&eacute;g&egrave;re qu'une grille
+    26&times;26 en m&eacute;moire et produit un r&eacute;sultat &eacute;quivalent. La s&eacute;paration classe/programme respecte les principes de la POO :
+    la classe <code>Vigenere</code> ne d&eacute;pend d'aucune entr&eacute;e/sortie console et pourrait &ecirc;tre r&eacute;utilis&eacute;e dans un autre contexte
+    (application graphique, API, etc.).
+</p>
+
+<!-- ============================================================ -->
+<!-- 2. ACRONYMES                                                  -->
+<!-- ============================================================ -->
+<div class="page-break"></div>
+<h1 id="acronymes">2. Acronymes</h1>
+
+<table class="data">
+    <tr><th>Acronyme</th><th>Signification</th></tr>
+    <tr><td>POO</td><td>Programmation Orient&eacute;e Objet</td></tr>
+    <tr><td>ASCII</td><td>American Standard Code for Information Interchange</td></tr>
+    <tr><td>DSI</td><td>Direction des Syst&egrave;mes d'Information</td></tr>
+    <tr><td>SDK</td><td>Software Development Kit</td></tr>
+    <tr><td>IDE</td><td>Integrated Development Environment / Environnement de d&eacute;veloppement int&eacute;gr&eacute;</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- 3. ANNEXE                                                     -->
+<!-- ============================================================ -->
+<div class="page-break"></div>
+<h1 id="annexe">3. Annexe</h1>
+
+<h3>Exemple d'ex&eacute;cution du programme</h3>
+
+<pre style="background:#1e1e1e; color:#dcdcdc; border-color:#333;">
+<span style="color:#9cdcfe;">Texte &agrave; chiffrer :</span> les gaulois sont dans la plaine
+<span style="color:#9cdcfe;">Cl&eacute; :</span> cogito
+<span style="color:#b5cea8;">Cl&eacute; superpos&eacute;e :</span> cog itocogi toco gito co gitoco
+<span style="color:#b5cea8;">Texte chiffr&eacute; :</span> nsy otincoa lcph jigg no vttwps
+<span style="color:#b5cea8;">Texte d&eacute;chiffr&eacute; :</span> les gaulois sont dans la plaine
+</pre>
+
+<p style="font-size: 9pt; color: #666; margin-top: 6px;">
+    <em>Le texte d&eacute;chiffr&eacute; correspond bien au texte original, ce qui valide le bon fonctionnement des m&eacute;thodes Chiffrer et Dechiffrer.</em>
+</p>
+
+<!-- FOOTER -->
+<div class="footer">
+    Fiche d'activit&eacute; &mdash; Vigen&egrave;re &mdash; Adam Planque &mdash; BTS SIO &mdash; ENSITECH / ENSP
+</div>
+
+</body>
+</html>
