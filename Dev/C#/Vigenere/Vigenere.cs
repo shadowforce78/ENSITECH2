@@ -2,6 +2,16 @@ using System;
 
 public class Vigenere
 {
+    // Tableau de Vigenère 26x26 : Table[ligne = lettre clé, colonne = lettre texte]
+    public char[,] Table { get; } = new char[26, 26];
+
+    public Vigenere()
+    {
+        for (int l = 0; l < 26; l++)
+            for (int c = 0; c < 26; c++)
+                Table[l, c] = (char)('a' + (l + c) % 26);
+    }
+
     // Répète la clé sous le texte (les non-lettres sont gardées telles quelles)
     public string SuperposeKey(string cle, string texte)
     {
@@ -35,7 +45,7 @@ public class Vigenere
             {
                 int lettre = char.ToLower(texte[i]) - 'a';       // 0 à 25
                 int decalage = char.ToLower(cleRepetee[i]) - 'a'; // 0 à 25
-                resultat += (char)('a' + (lettre + decalage) % 26);
+                resultat += Table[decalage, lettre];
             }
             else
             {
@@ -54,9 +64,11 @@ public class Vigenere
         {
             if (char.IsAsciiLetter(texte[i]))
             {
-                int lettre = char.ToLower(texte[i]) - 'a';
                 int decalage = char.ToLower(cleRepetee[i]) - 'a';
-                resultat += (char)('a' + (lettre - decalage + 26) % 26);
+                // on cherche la lettre chiffrée dans la ligne de la clé : sa colonne = lettre claire
+                int col = 0;
+                while (Table[decalage, col] != char.ToLower(texte[i])) col++;
+                resultat += (char)('a' + col);
             }
             else
             {
